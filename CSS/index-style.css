@@ -1,0 +1,35 @@
+/* SETUP */
+@import url('https://fonts.googleapis.com/css2?family=Bigelow+Rules&display=swap');
+
+:root {
+    --color1: #2D3142;
+    --color2: #B0D7FF;
+    --color3: #EAE8FF;
+    --color4: #ADACB5;
+    --color5: #D8D5DB;
+}
+
+html {
+    font-size: 15px;
+}
+
+/* ELEMENT SELECTOR */
+
+body {
+    background-color: var(--color1);
+}
+
+/* CLASS SELECTOR */
+
+.letter {
+    font-size: 300pt;
+    font-family: 'Bigelow Rules', cursive;
+    color: var(--color3);
+}
+
+
+/* ID SELECTOR */
+
+#my-name {
+    background-color: var(--color1);
+}

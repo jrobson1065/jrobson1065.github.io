@@ -1,0 +1,26 @@
+/* SETUP */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* ELEMENT SELECTOR */
+
+/* CLASS SELECTOR */
+
+.letter {
+  width: 115px;
+}
+
+/* ID SELECTOR */
+
+#my-name {
+  display: flex;
+  flex-direction: row;
+  position: absolute;
+  margin: 0 auto;
+  justify-content: center;
+  width: 100%;
+}
