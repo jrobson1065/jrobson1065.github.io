@@ -1,29 +1,130 @@
-/* ELEMENT SELECTOR */
-
-/* CLASS SELECTOR */
-
-.letter {
-    animation: fadeIn ease 10s;
-    -webkit-animation: fadeIn ease 10s;
-    -moz-animation: fadeIn ease 10s;
+/* SETUP */
+:root {
+    --color2: #b0d7ff;
+    --color3: #eae8ff;
 }
 
-.letter:first-child,
-.letter:nth-child(5) {
+@media only screen and (min-width: 1200px) {
+  /* CLASS SELECTOR */
+
+  .letter {
+    animation: fadeIn ease 4s, shrink ease 2s 4s;
+    animation-fill-mode: forwards;
+  }
+
+  .letter:first-child,
+  .letter:nth-child(6) {
     width: auto;
-    animation: fadeIn ease 3s;
+    animation: fadeIn ease 2s, shrink ease 2s 4s;
+    animation-fill-mode: forwards;
+  }
+
+  .letter:nth-child(5) {
+    width: auto;
+    animation: fadeInStar ease 4s, shrinkStar ease 2s 4s, starGlow ease 3s infinite;
+    animation-fill-mode: forwards;
+  }
+  /* KEYFRAMES */
+
+  @keyframes fadeIn {
+    0% {
+      opacity: 0;
+      width: 0;
+      margin-bottom: 500px;
+    }
+    50% {
+      opacity: 0;
+      width: 0;
+      margin-bottom: 500px;
+    }
+    100% {
+      opacity: 1;
+      width: 100px;
+      margin-bottom: 500px;
+    }
+  }
+
+  @keyframes shrink {
+    0% {
+      font-size: 300pt;
+      height: 100%;
+      width: 100px;
+      margin-bottom: 500px;
+    }
+    100% {
+      font-size: 50pt;
+      height: 100px;
+      width: 30px;
+      margin-bottom: 0;
+    }
+  }
+
+  @keyframes fadeInStar {
+    0% {
+      opacity: 0;
+      width: 0px;
+      margin-right: 0;
+    }
+    50% {
+      opacity: 0;
+      width: 0px;
+      margin-right: 0;
+    }
+    100% {
+      opacity: 1;
+      width: 100px;
+      margin-right: 150px;
+    }
+  }
+
+  @keyframes shrinkStar {
+    0% {
+      font-size: 300pt;
+      height: 100%;
+      width: 100px;
+      margin-right: 150px;
+    }
+    100% {
+      font-size: 50pt;
+      height: 100px;
+      width: 30px;
+      margin-right: 0;
+    }
+  }
+
+  @keyframes starGlow {
+    0% {
+        text-shadow: 0 0 10px var(--color2);
+    }
+    50% {
+        text-shadow: 0 0 100px var(--color2);
+    }
+    100% {
+        text-shadow: 0 0 10px var(--color2);
+    }
+  }
 }
 
+@media only screen and (max-width: 1200px) {
+  .letter {
+    width: 30px;
+    height: 100px;
+    font-size: 50pt;
+  }
 
-/* ID SELECTOR */
+  .letter:nth-child(5) {
+    animation: starGlow ease 3s infinite;
+  }
 
-
-/* KEYFRAMES */
-
-    @keyframes fadeIn {
-    0% {opacity: 0; width: 0px;}
-    50% {opacity: 0; width: 0px;}
-    100% {opacity: 1; width: 115px;}
+  @keyframes starGlow {
+    0% {
+        text-shadow: 0 0 10px var(--color2);
     }
-    
-    
+    50% {
+        text-shadow: 0 0 100px var(--color2);
+    }
+    100% {
+        text-shadow: 0 0 10px var(--color2);
+    }
+  }
+}

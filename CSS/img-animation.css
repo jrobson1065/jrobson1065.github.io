@@ -1,0 +1,60 @@
+/* CLASS SELECTORS */
+
+.skills li figure img:hover {
+  animation: pop ease 0.6s forwards;
+}
+
+/* ID SELECTORS */
+
+#jslogo:hover {
+  animation: popJSLOGO ease 0.6s forwards;
+}
+
+/* KEYFRAMES */
+
+@keyframes pop {
+  0% {
+    margin-top: 0;
+    padding-bottom: 0;
+  }
+  50% {
+    margin-top: -25px;
+    padding-bottom: 25px;
+  }
+  90% {
+    margin-top: 5px;
+    padding-bottom: -5px;
+  }
+  100% {
+    margin-top: 0;
+    padding-bottom: 0;
+  }
+}
+
+@keyframes popJSLOGO {
+  0% {
+    margin-top: 27px;
+    padding-bottom: 8px;
+  }
+  50% {
+    margin-top: 2px;
+    padding-bottom: 33px;
+  }
+  90% {
+    margin-top: 32px;
+    padding-bottom: 3px;
+  }
+  100% {
+    margin-top: 27px;
+    padding-bottom: 8px;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  /* CELL PHONES */
+
+  .skills li figure img:hover,
+  #jslogo:hover {
+    animation: none;
+  }
+}
