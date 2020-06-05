@@ -37,11 +37,6 @@
   width: 50%;
 }
 
-.intro {
-  text-align: center;
-  margin: 50px 0;
-}
-
 .letter {
   width: 30px;
 }
@@ -63,19 +58,6 @@
 
 .nav-link {
   margin: 5px 5px;
-}
-
-.skills {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: center;
-}
-
-.skills li figure img {
-  height: 100px;
-  width: auto;
-  margin: 0 20px;
 }
 
 .top-background {
