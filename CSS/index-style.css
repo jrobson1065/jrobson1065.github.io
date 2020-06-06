@@ -1,6 +1,5 @@
 /* SETUP */
-@import url("https://fonts.googleapis.com/css2?family=Bigelow+Rules&display=swap");
-@import url('https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Architects+Daughter&family=Dancing+Script&family=Bigelow+Rules&display=swap');
 
 :root {
   --color1: #2d3142;
@@ -10,37 +9,13 @@
   --color5: #d8d5db;
   --specialFont: "Bigelow Rules", cursive;
   --fancyCursiveFont: "Dancing Script", cursive;
+  --handwritingFont: "Architects Daughter", monospace;
   font-size: 50px;
 }
 
 /* ELEMENT SELECTOR */
 
-body {
-  background-color: var(--color1);
-}
-
-nav .current-link {
-  text-decoration: underline;
-  cursor: default;
-}
-
-nav .current-link:hover {
-  text-shadow: 0 0 0;
-  font-size: 1rem;
-  font-weight: normal;
-  color: var(--color1);
-}
-
 /* CLASS SELECTOR */
-
-.body-content {
-  background-color: var(--color1);
-}
-
-.footer-bar {
-  background-color: var(--color4);
-  font-size: 0.5rem;
-}
 
 .container div {
   border-top: var(--color3) 1px solid;
@@ -49,98 +24,22 @@ nav .current-link:hover {
 }
 
 .intro {
-  font-size: 1rem;
-  font-family: var(--fancyCursiveFont);
+  font-size: 0.5rem;
+  font-family: monospace;
   color: var(--color5);
   text-align: center;
 }
 
 .intro::after {
-  content: "— Full Stack Web Developer —";
-}
-
-.letter {
-  font-size: 300pt;
-  color: var(--color3);
-  text-decoration: underline;
-  text-shadow: 0 0 30px var(--color2);
-}
-
-.letter:first-child {
-  margin-left: 50px;
-}
-
-.letter:last-child {
-  margin-right: 50px;
-}
-
-.letter:nth-child(5) {
-  text-decoration: none;
-}
-
-.nav-bar {
-  background-color: var(--color4);
-}
-
-.nav-link {
-  font-size: 1rem;
-  text-decoration: none;
-  color: var(--color1);
-}
-
-.nav-link:hover {
-  text-shadow: 0 0 30px var(--color1);
-  font-size: 1.1rem;
-  font-weight: bolder;
-  color: var(--color2);
-}
-
-.skills {
-  list-style-type: none;
-}
-
-.skills li figure img {
-  -webkit-box-reflect: below 2px -webkit-gradient(linear, right top, right
-        bottom, from(transparent), to(rgba(255, 255, 255, 0.4)));
-}
-
-.special-font {
-  font-family: var(--specialFont);
-}
-
-.top-background {
-  background-color: var(--color1);
+  content: "{ :Full Stack Web Developer: }";
 }
 
 /* ID SELECTOR */
 
-#my-name {
-  background-color: var(--color1);
-}
-
-#my-name:hover {
-  cursor: default;
-}
-
-#nav-pic {
-  background-image: url("/images/self.jpg");
-  background-size: 100px auto;
-  background-position-y: -15px;
-  border: var(--color1) 2px solid;
-  border-radius: 50%;
-  opacity: 0.85;
-  box-shadow: 0 0 40px var(--color1), 5px 5px 15px 0 var(--color1) inset, -5px -5px 15px 0 var(--color1) inset; 
-}
-
-#nav-pic:hover {
-  background-position-y: -25px;
-  opacity: 0.9;
-}
 
 /* RESPONSIVE DESIGN */
 
 @media only screen and (max-width: 830px) {
-  /* SMALLER SCREENS */
 
   .intro::after {
     content: "Full Stack Web Development";
@@ -152,22 +51,12 @@ nav .current-link:hover {
   /* SMALLER SCREENS */
 
   .intro {
-    font-size: 0.8rem;
+    font-size: 0.3rem;
   }
 }
 
 @media only screen and (max-width: 525px) {
   /* CELL PHONES */
-  .nav-link {
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    font-size: 0.5rem;
-  }
-
-  .nav-link:hover,
-  nav .current-link:hover {
-    font-size: 0.5rem;
-    font-weight: normal;
-  }
 
   .intro {
     font-size: 0.5rem;

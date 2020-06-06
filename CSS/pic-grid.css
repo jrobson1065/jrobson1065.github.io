@@ -1,0 +1,109 @@
+.pic-container {
+    width: 390px;
+    height: 390px;
+    margin-left: 50px;
+    border-radius: 70px;
+    display: grid;
+    grid-template-columns: 130px 130px 130px;
+    grid-template-rows: 130px 130px 130px;
+    box-sizing: content-box;
+  }
+  
+  .pic-underlay {
+      width: 390px;
+      height: 390px;
+      margin-left: 50px;
+      margin-top: -390px;
+      border-radius: 70px;
+      background-image: url("/images/self.jpg");
+      filter: grayscale(100%);
+      background-size: 500px auto;
+      background-position: -40px -130px;
+      position: absolute;
+      opacity: 0.1;
+      z-index: -1;
+  }
+  
+  .pic-bubble {
+    border-radius: 50%;
+    opacity: 0;
+    box-shadow: 0 0 40px grey, 5px 5px 15px 0 grey inset,
+      -5px -5px 15px 0 grey inset;
+  }
+  
+  .pic1:hover,
+  .pic2:hover,
+  .pic3:hover,
+  .pic4:hover,
+  .pic5:hover,
+  .pic6:hover,
+  .pic7:hover,
+  .pic8:hover,
+  .pic9:hover {
+    filter: grayscale(0);
+    opacity: 0.7;
+  }
+  
+  .pic1 {
+    background-image: url("/images/self.jpg");
+    filter: grayscale(100%);
+    background-size: 500px auto;
+    background-position: -40px -130px;
+  }
+  
+  .pic2 {
+    background-image: url("/images/self.jpg");
+    filter: grayscale(100%);
+    background-size: 500px auto;
+    background-position: -170px -130px;
+  }
+  
+  .pic3 {
+    background-image: url("/images/self.jpg");
+    filter: grayscale(100%);
+    background-size: 500px auto;
+    background-position: -300px -130px;
+  }
+  
+  .pic4 {
+    background-image: url("/images/self.jpg");
+    filter: grayscale(100%);
+    background-size: 500px auto;
+    background-position: -40px -260px;
+  }
+  
+  .pic5 {
+    background-image: url("/images/self.jpg");
+    filter: grayscale(100%);
+    background-size: 500px auto;
+    background-position: -170px -260px;
+  }
+  
+  .pic6 {
+    background-image: url("/images/self.jpg");
+    filter: grayscale(100%);
+    background-size: 500px auto;
+    background-position: -300px -260px;
+  }
+  
+  .pic7 {
+    background-image: url("/images/self.jpg");
+    filter: grayscale(100%);
+    background-size: 500px auto;
+    background-position: -40px -390px;
+  }
+  
+  .pic8 {
+    background-image: url("/images/self.jpg");
+    filter: grayscale(100%);
+    background-size: 500px auto;
+    background-position: -170px -390px;
+  }
+  
+  .pic9 {
+    background-image: url("/images/self.jpg");
+    filter: grayscale(100%);
+    background-size: 500px auto;
+    background-position: -300px -390px;
+  }
+  
