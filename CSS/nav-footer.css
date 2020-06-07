@@ -1,5 +1,5 @@
 /* SETUP FOR ALL PAGES */
-@import url('https://fonts.googleapis.com/css2?family=Dosis:wght@300&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Dosis:wght@300&display=swap");
 
 :root {
   --color1: #2d3142;
@@ -22,7 +22,6 @@
 
 body {
   background-color: var(--color1);
-  height: 100%;
 }
 
 .body-content {
@@ -229,6 +228,16 @@ nav .current-link:hover {
   }
 }
 
+@media only screen and (max-width: 750px) {
+
+  .skills li figure img,
+  #jslogo {
+    height: 30px;
+    margin: 10px;
+    margin-top: 25px;
+  }
+}
+
 @media only screen and (max-width: 650px) {
   /* SMALLER SCREENS */
 
@@ -240,6 +249,18 @@ nav .current-link:hover {
   #jslogo {
     height: 30px;
     margin: 10px;
+  }
+
+  .footer-content {
+    font-size: 12pt;
+  }
+
+  .footer-content span {
+    margin-top: -10px;
+  }
+
+  .footer-bar {
+    height: 50px;
   }
 }
 
