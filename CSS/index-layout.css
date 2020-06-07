@@ -25,6 +25,18 @@
   margin: 30px 0;
 }
 
+.baby-duck {
+  height: 80px;
+  width: auto;
+  position: relative;
+  left: 50px;
+  top: -10px;
+}
+
+.duck-text {
+  margin-top: -30px;
+}
+
 /* ID SELECTOR */
 
 /* RESPONSIVE DESIGN */

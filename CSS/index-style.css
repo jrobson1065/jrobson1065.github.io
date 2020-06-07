@@ -34,6 +34,29 @@
   content: "{ :Full Stack Web Developer: }";
 }
 
+.duck-text {
+  font-size: 30pt;
+  width: 100%;
+  color: var(--color1);
+  text-align: center;
+}
+
+.baby-duck {
+  opacity: 0;
+  overflow: hidden;
+  transform: scaleX(-1);
+}
+
+.pic-box:active .baby-duck {
+  opacity: 1;
+  transition: 3s;
+}
+
+.pic-box:hover .duck-text {
+  color: var(--color2);
+  text-shadow: 0 0 20px var(--color3), 0 0 40px var(--color3);
+}
+
 /* ID SELECTOR */
 
 

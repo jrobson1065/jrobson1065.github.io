@@ -7,6 +7,7 @@
     grid-template-columns: 130px 130px 130px;
     grid-template-rows: 130px 130px 130px;
     box-sizing: content-box;
+    overflow: hidden;
   }
   
   .pic-underlay {
