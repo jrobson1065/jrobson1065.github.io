@@ -11,18 +11,6 @@
 
 /* ELEMENT SELECTOR */
 
-nav .current-link {
-  text-decoration: underline;
-  cursor: default;
-}
-
-nav .current-link:hover {
-  text-shadow: 0 0 0;
-  font-size: 1rem;
-  font-weight: normal;
-  color: var(--color1);
-}
-
 /* CLASS SELECTOR */
 
 .about-text {

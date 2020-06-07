@@ -16,7 +16,7 @@
       margin-top: -390px;
       border-radius: 70px;
       background-image: url("/images/self.jpg");
-      filter: grayscale(100%);
+      filter: grayscale(80%);
       background-size: 500px auto;
       background-position: -40px -130px;
       position: absolute;
@@ -29,6 +29,7 @@
     opacity: 0;
     box-shadow: 0 0 40px grey, 5px 5px 15px 0 grey inset,
       -5px -5px 15px 0 grey inset;
+    cursor: pointer;
   }
   
   .pic1:hover,
@@ -41,9 +42,55 @@
   .pic8:hover,
   .pic9:hover {
     filter: grayscale(0);
-    opacity: 0.7;
+    opacity: 0.9;
   }
   
+  .pic1:active {
+    filter: grayscale(0);
+    opacity: 0.9;
+    animation: grow1 ease 0.5s forwards;
+  }
+  .pic2:active {
+    filter: grayscale(0);
+    opacity: 0.9;
+    animation: grow2 ease 0.5s forwards;
+  }
+  .pic3:active {
+    filter: grayscale(0);
+    opacity: 0.9;
+    animation: grow3 ease 0.5s forwards;
+  }
+  .pic4:active {
+    filter: grayscale(0);
+    opacity: 0.9;
+    animation: grow4 ease 0.5s forwards;
+  }
+  .pic5:active {
+    filter: grayscale(0);
+    opacity: 0.9;
+    animation: grow5 ease 0.5s forwards;
+  }
+  .pic6:active {
+    filter: grayscale(0);
+    opacity: 0.9;
+    animation: grow6 ease 0.5s forwards;
+  }
+  .pic7:active {
+    filter: grayscale(0);
+    opacity: 0.9;
+    animation: grow7 ease 0.5s forwards;
+  }
+  .pic8:active {
+    filter: grayscale(0);
+    opacity: 0.9;
+    animation: grow8 ease 0.5s forwards;
+  }
+  .pic9:active {
+    filter: grayscale(0);
+    opacity: 0.9;
+    animation: grow9 ease 0.5s forwards;
+  }
+
   .pic1 {
     background-image: url("/images/self.jpg");
     filter: grayscale(100%);
@@ -107,3 +154,159 @@
     background-position: -300px -390px;
   }
   
+  @keyframes grow1 {
+    from {
+      height: 130px;
+      width: 130px;
+      border-radius: 50%;
+    }
+    to {
+      height: 390px;
+      width: 390px;
+      border-radius: 70px;
+    }
+  }
+  
+  @keyframes grow2 {
+    from {
+      margin-left: 0;
+      height: 130px;
+      width: 130px;
+      border-radius: 50%;
+      background-position: -170px -130px;
+    }
+    to {
+      margin-left: -130px;
+      height: 390px;
+      width: 390px;
+      border-radius: 70px;
+      background-position: -40px -130px;
+    }
+  }
+  
+  @keyframes grow3 {
+    from {
+      margin-left: 0;
+      height: 130px;
+      width: 130px;
+      border-radius: 50%;
+      background-position: -300px -130px;
+    }
+    to {
+      margin-left: -260px;
+      height: 390px;
+      width: 390px;
+      border-radius: 70px;
+      background-position: -40px -130px;
+    }
+  }
+  
+  @keyframes grow4 {
+    from {
+      margin-top: 0;
+      height: 130px;
+      width: 130px;
+      border-radius: 50%;
+      background-position: -40px -260px;
+    }
+    to {
+      margin-top: -130px;
+      height: 390px;
+      width: 390px;
+      border-radius: 70px;
+      background-position: -40px -130px;
+    }
+  }
+  
+  @keyframes grow5 {
+    from {
+      margin-top: 0;
+      margin-left: 0;
+      height: 130px;
+      width: 130px;
+      border-radius: 50%;
+      background-position: -170px -260px;
+    }
+    to {
+      margin-top: -130px;
+      margin-left: -130px;
+      height: 390px;
+      width: 390px;
+      border-radius: 70px;
+      background-position: -40px -130px;
+    }
+  }
+  
+  @keyframes grow6 {
+    from {
+      margin-top: 0;
+      margin-left: 0;
+      height: 130px;
+      width: 130px;
+      border-radius: 50%;
+      background-position: -300px -260px;
+    }
+    to {
+      margin-top: -130px;
+      margin-left: -260px;
+      height: 390px;
+      width: 390px;
+      border-radius: 70px;
+      background-position: -40px -130px;
+    }
+  }
+  
+  @keyframes grow7 {
+    from {
+      margin-top: 0;
+      height: 130px;
+      width: 130px;
+      border-radius: 50%;
+      background-position: -40px -390px;
+    }
+    to {
+      margin-top: -260px;
+      height: 390px;
+      width: 390px;
+      border-radius: 70px;
+      background-position: -40px -130px;
+    }
+  }
+  
+  @keyframes grow8 {
+    from {
+      margin-top: 0;
+      margin-left: 0;
+      height: 130px;
+      width: 130px;
+      border-radius: 50%;
+      background-position: -170px -390px;
+    }
+    to {
+      margin-top: -260px;
+      margin-left: -130px;
+      height: 390px;
+      width: 390px;
+      border-radius: 70px;
+      background-position: -40px -130px;
+    }
+  }
+  
+  @keyframes grow9 {
+    from {
+      margin-top: 0;
+      margin-left: 0;
+      height: 130px;
+      width: 130px;
+      border-radius: 50%;
+      background-position: -300px -390px;
+    }
+    to {
+      margin-top: -260px;
+      margin-left: -260px;
+      height: 390px;
+      width: 390px;
+      border-radius: 70px;
+      background-position: -40px -130px;
+    }
+  }
