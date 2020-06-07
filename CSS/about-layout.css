@@ -48,12 +48,34 @@
 .picture3,
 .picture4,
 .picture6,
-.picture7,
-.picture8,
 .picture10,
 .picture11,
 .picture12 {
   margin-top: -400px;
+}
+
+.picture7 {
+  margin-top: -350px;
+}
+
+.picture8 {
+  margin-top: -400px;
+}
+
+.picture5 {
+  margin-top: 60px;
+}
+
+.picture9 {
+  margin-top: 100px;
+}
+
+.picture11 {
+  margin-top: -500px;
+}
+
+.picture12 {
+  margin-top: -300px;
 }
 
 /* ID SELECTOR */
@@ -79,6 +101,10 @@
     flex-direction: column;
     width: 340px;
     height: auto;
+  }
+
+  #hobbies {
+    flex-direction: column-reverse;
   }
 }
 @media only screen and (max-width: 525px) {

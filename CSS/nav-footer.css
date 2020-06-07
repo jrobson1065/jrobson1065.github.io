@@ -7,9 +7,6 @@
   --color3: #eae8ff;
   --color4: #adacb5;
   --color5: #d8d5db;
-  --specialFont: "Bigelow Rules", cursive;
-  --handwritingFont: "Architects Daughter", monospace;
-  --righteousFont: "Righteous", cursive;
   --newFont: "Dosis", sans-serif;
   font-size: 50px;
 }
@@ -25,6 +22,7 @@ body {
   display: flex;
   min-height: 100vh;
   flex-direction: column;
+  font-family: var(--newFont);
 }
 
 .body-content {
