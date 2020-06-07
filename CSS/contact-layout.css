@@ -2,21 +2,26 @@
 
 /* CLASS SELECTOR */
 
+.body-box {
+    display: block;
+    padding: 25px;
+    height: auto;
+    box-sizing: content-box;
+}
+
 .body-content {
     display: flex;
     flex-direction: column;
     align-items: center;
-    font-size: 25pt;
-    margin-left: 100px;
 }
 
-.body-content div {
+.body-content div div {
     height: 100px;
     margin: auto;
 }
 
 .body-content div span {
-    margin: auto;
+    margin-left: 20px;
 }
 
 .body-content div img {

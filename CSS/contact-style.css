@@ -12,6 +12,13 @@
 
 
 /* CLASS SELECTOR */
+
+.body-box {
+    background-color: var(--color1);
+    border-radius: 50px;
+    opacity: 0.8;
+}
+
 .body-content {
     font-size: 25pt;
     color: var(--color5)
