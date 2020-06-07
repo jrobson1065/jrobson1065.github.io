@@ -188,20 +188,20 @@ nav .current-link:hover {
 
 /* RESPONSIVE DESIGN */
 
-@media only screen and (min-width: 1400px) {
-  body {
-    background-image: url("/images/bg-mountain.jpg");
-    background-size: 100%;
-    background-position-y: -100px;
-  }
-}
-
 @media only screen and (min-width: 1000px) {
   body {
     background-image: url("/images/bg-mountain.jpg");
     background-size: 1400px;
     background-position-y: -100px;
     background-attachment: fixed;
+  }
+}
+
+@media only screen and (min-width: 1400px) {
+  body {
+    background-image: url("/images/bg-mountain.jpg");
+    background-size: 100%;
+    background-position-y: -100px;
   }
 }
 
