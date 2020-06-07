@@ -22,14 +22,16 @@
 
 body {
   background-color: var(--color1);
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
 }
 
 .body-content {
   margin-top: 70px;
   padding-top: 20px;
-  position: absolute;
   width: 100%;
-  z-index: 90;
+  flex: 1;
 }
 
 .nav-font {
@@ -45,11 +47,10 @@ body {
 .footer-bar {
   background-color: var(--color4);
   font-size: 0.5rem;
-  position: fixed;
-  bottom: 0;
   height: 100px;
   width: 100%;
   opacity: 0.8;
+  margin-bottom: 0;
 }
 
 .footer-bar span {
@@ -100,7 +101,7 @@ body {
 #my-name {
   display: flex;
   flex-direction: row;
-  position: fixed;
+  position: absolute;
   justify-content: center;
   width: 100%;
   z-index: 100;
@@ -187,37 +188,6 @@ nav .current-link:hover {
   padding-bottom: 8px;
 }
 
-#nav-pic {
-  height: 150px;
-  width: 150px;
-  position: absolute;
-  z-index: 1;
-  margin-top: 50px;
-  margin-right: 40px;
-  margin-left: -50px;
-  background-image: url("/images/self.jpg");
-  background-size: 150px auto;
-  background-position-y: -15px;
-  border: var(--color1) 2px solid;
-  border-radius: 50%;
-  opacity: 0.35;
-  box-shadow: 0 0 40px var(--color1), 5px 5px 15px 0 black inset,
-    -5px -5px 15px 0 black inset;
-  filter: grayscale(100%);
-}
-
-#nav-pic:hover {
-  background-size: 225px auto;
-  height: 225px;
-  width: 225px;
-  margin-top: 25px;
-  margin-left: -80px;
-  z-index: 200;
-  background-position-y: -25px;
-  opacity: 0.7;
-  filter: grayscale(0);
-}
-
 /* RESPONSIVE DESIGN */
 
 @media only screen and (min-width: 1400px) {
@@ -233,6 +203,7 @@ nav .current-link:hover {
     background-image: url("/images/bg-mountain.jpg");
     background-size: 1400px;
     background-position-y: -100px;
+    background-attachment: fixed;
   }
 }
 

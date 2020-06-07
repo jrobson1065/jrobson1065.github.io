@@ -33,8 +33,6 @@ nav .current-link:hover {
 
 .about-text {
   font-size: 0.5rem;
-  text-align: justify;
-  text-justify: inter-word;
 }
 
 .body-container {
@@ -45,21 +43,6 @@ nav .current-link:hover {
 .picture div {
   background-size: 350px auto;
   background-repeat: no-repeat;
-}
-
-.picture1 {
-  background-image: url("/images/self.jpg");
-  animation: changeImage1 10s ease infinite;
-}
-
-.picture2 {
-  background-image: url("/images/self2.jpg");
-  animation: changeImage2 10s ease infinite;
-}
-
-.picture3 {
-  background-image: url("/images/self3.jpg");
-  animation: changeImage3 10s ease infinite;
 }
 
 /* ID SELECTOR */
@@ -77,48 +60,4 @@ nav .current-link:hover {
 
 @media only screen and (max-width: 525px) {
   /* CELL PHONES */
-}
-
-@keyframes changeImage1 {
-  0%,
-  30%,
-  100% {
-    opacity: 1;
-    display: inherit;
-  }
-  33%,
-  96% {
-    opacity: 0;
-    display: none;
-  }
-}
-
-@keyframes changeImage2 {
-  0%,
-  30%,
-  66%,
-  96%,
-  100% {
-    opacity: 0;
-    display: none;
-  }
-  33%,
-  63% {
-    opacity: 1;
-    display: inherit;
-  }
-}
-
-@keyframes changeImage3 {
-  0%,
-  63%,
-  100% {
-    opacity: 0;
-    display: none;
-  }
-  66%,
-  96% {
-    opacity: 1;
-    display: inherit;
-  }
 }
