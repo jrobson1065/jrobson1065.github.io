@@ -24,18 +24,18 @@ ul li span {
 }
 
 .img1 {
-  right: -300px;
+  right: -325px;
   top: -160px;
 }
 
 .img2 {
-  right: -300px;
-  top: -208px;
+  right: -325px;
+  top: -203px;
 }
 
 .img3 {
-  right: -300px;
-  top: -256px;
+  right: -325px;
+  top: -263px;
 }
 
 .input {
@@ -71,7 +71,8 @@ ul li span {
 
 .projects {
   padding: 20px;
-  width: 60%;
+  width: 65%;
+  margin-left: -15px;
 }
 
 .projects img {
