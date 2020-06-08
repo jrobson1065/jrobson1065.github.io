@@ -17,6 +17,11 @@
 
 /* CLASS SELECTOR */
 
+.click-text {
+  font-size: 25pt;
+  color: var(--color2);
+}
+
 .container div {
   border-top: var(--color3) 1px solid;
   opacity: 0.2;
