@@ -21,7 +21,7 @@
       background-size: 500px auto;
       background-position: -40px -130px;
       position: absolute;
-      opacity: 1;
+      opacity: 0.8;
       z-index: -1;
   }
   

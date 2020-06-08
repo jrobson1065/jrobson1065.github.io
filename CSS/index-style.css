@@ -17,15 +17,34 @@
 
 /* CLASS SELECTOR */
 
+.baby-duck {
+  opacity: 0;
+  overflow: hidden;
+  transform: scaleX(-1);
+}
+
 .click-text {
   font-size: 25pt;
   color: var(--color2);
+  display: flex;
+  width: 100%;
+  justify-content: center;
+}
+
+.click-text::after {
+  content: "Ducky hides!"
 }
 
 .container div {
   border-top: var(--color3) 1px solid;
   opacity: 0.2;
   box-shadow: 0 0 100px var(--color3);
+}
+
+.duck-text {
+  font-size: 30pt;
+  width: 100%;
+  color: var(--color1);
 }
 
 .intro {
@@ -39,17 +58,12 @@
   content: "{ :Full Stack Web Developer: }";
 }
 
-.duck-text {
-  font-size: 30pt;
-  width: 100%;
-  color: var(--color1);
-  text-align: center;
+.pic-box:hover .click-text::after {
+  content: "Click and hold to find Ducky!";
 }
 
-.baby-duck {
-  opacity: 0;
-  overflow: hidden;
-  transform: scaleX(-1);
+.pic-box:active .click-text::after {
+  content: "You found Ducky!!";
 }
 
 .pic-box:active .baby-duck {
