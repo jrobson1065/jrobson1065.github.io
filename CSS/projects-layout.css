@@ -1,21 +1,5 @@
 /* ELEMENT SELECTOR */
 
-ul li span {
-  padding: 10px;
-}
-
-ul li:hover span {
-  display: block;
-}
-
-ul li:hover img {
-  display: block;
-}
-
-ul li span {
-  display: none;
-}
-
 /* CLASS SELECTOR */
 
 .body-content {
@@ -58,7 +42,7 @@ ul li span {
 .panel {
   display: none;
   width: 100%;
-  height: 350px;
+  height: auto;
   padding: 20px;
   order: 99;
 }
@@ -83,6 +67,16 @@ ul li span {
   margin-bottom: -180px;
 }
 
+.projects li:hover span,
+.projects li:hover img {
+  display: block;
+}
+
+.projects li span {
+  display: none;
+  padding: 10px;
+}
+
 .tabs {
   display: flex;
   flex-wrap: wrap;
@@ -103,8 +97,8 @@ ul li span {
 }
 
 @media (max-width: 650px) {
-  .tabs {
-    max-width: 450px;
+  .body-content {
+    margin-bottom: 450px;
   }
 
   .label {
@@ -112,16 +106,28 @@ ul li span {
     font-size: 12pt;
     padding: 10px 10px;
   }
+
+  .projects img {
+    display: none;
+  }
+
+  .projects li:hover img {
+    display: none;
+  }
+
+  .tabs {
+    max-width: 450px;
+  }
 }
 
 @media (max-width: 400px) {
-  .tabs {
-    max-width: 90%;
-    margin-left: 5%;
-  }
-
   .label {
     width: 30%;
     padding: 10px 10px;
+  }
+
+  .tabs {
+    max-width: 90%;
+    margin-left: 5%;
   }
 }
