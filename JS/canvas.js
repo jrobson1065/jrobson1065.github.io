@@ -10,40 +10,37 @@ var mouse = {
   y: undefined,
 };
 
-var maxZ = 15;
-var minZ = 6;
-var maxSize = 8;
+var maxZ = 4;
+var minZ = 3;
 
 window.addEventListener("mousemove", function (event) {
   mouse.x = event.x;
   mouse.y = event.y;
 });
 
-function Star(x, y, a, z, b) {
+function Star(x, y, a, z, size, b) {
   this.x = x;
   this.y = y;
   this.z = z;
   this.a = a;
+  this.size = size;
   this.b = b;
 
   var color = "#eae8ff";
 
   this.draw = function(color) {
     c.globalAlpha = 0.7;
-    // c.fillStyle = color;
-    // c.beginPath();
-    // c.arc(this.x, this.y, Math.max(this.z, 0), 0, Math.PI * 2, false);
-    // c.fill();
-    c.font = this.z + 'px Arial';
     c.fillStyle = color;
-    c.fillText('✷', this.x, this.y);
+    c.beginPath();
+    c.arc(this.x, this.y, Math.max(this.z, 0), 0, Math.PI * 2, false);
+    c.fill();
   };
 
   this.update = function () {
-    if (this.z > maxSize) {
+    if (this.z > this.size) {
       this.a = 0;
     }
-    if (this.z < 1) {
+    if (this.z < 0) {
       this.a = 1;
     }
 
@@ -77,12 +74,13 @@ function Star(x, y, a, z, b) {
 var starArray = [];
 
 for (var i = 0; i < 600; i++) {
+  var size = Math.random() * 3;
   var x = Math.random() * innerWidth;
   var y = Math.random() * innerHeight;
-  var z = Math.random() * 9 + 2;
+  var z = Math.random() * size;
   var a = 1;
-  var b = Math.random() + 1;
-  starArray.push(new Star(x, y, a, z, b));
+  var b = Math.random() / 20;
+  starArray.push(new Star(x, y, a, z, size, b));
 }
 
 function animate() {
