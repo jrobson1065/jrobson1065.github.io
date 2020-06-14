@@ -8,14 +8,6 @@
 
 /* CLASS SELECTOR */
 
-.baby-duck {
-  height: 80px;
-  width: auto;
-  position: relative;
-  left: 50px;
-  top: -10px;
-}
-
 .body-content {
   display: flex;
   flex-direction: row;
@@ -26,13 +18,9 @@
   padding: 0 auto;
 }
 
-.click-text {
-  margin-left: -30px;
-}
-
 .duck-text {
-  margin-top: -30px;
   margin-left: 20px;
+  margin-bottom: 10px;
 }
 
 .intro {

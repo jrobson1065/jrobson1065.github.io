@@ -17,24 +17,6 @@
 
 /* CLASS SELECTOR */
 
-.baby-duck {
-  opacity: 0;
-  overflow: hidden;
-  transform: scaleX(-1);
-}
-
-.click-text {
-  font-size: 25pt;
-  color: var(--color2);
-  display: flex;
-  width: 100%;
-  justify-content: center;
-}
-
-.click-text::after {
-  content: "Ducky hides!"
-}
-
 .container div {
   border-top: var(--color3) 1px solid;
   opacity: 0.2;

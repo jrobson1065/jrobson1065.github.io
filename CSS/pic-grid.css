@@ -35,6 +35,15 @@
     filter: grayscale(100%);
     background-size: 500px auto;
   }
+
+  .pic-bubble:active {
+    background-image: url("/images/littleduck.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position-y: 0 !important;
+    filter: grayscale(0);
+    opacity: 0.9;
+  }
   
   .pic1:hover,
   .pic2:hover,
@@ -44,7 +53,11 @@
   .pic6:hover,
   .pic7:hover,
   .pic8:hover,
-  .pic9:hover,
+  .pic9:hover {
+    filter: grayscale(0);
+    opacity: 0.9;
+  }
+
   .pic1:active,
   .pic2:active,
   .pic3:active,
@@ -54,6 +67,9 @@
   .pic7:active,
   .pic8:active,
   .pic9:active {
+    background-image: url("/images/littleduck.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
     filter: grayscale(0);
     opacity: 0.9;
   }
@@ -143,7 +159,7 @@
       height: 130px;
       width: 130px;
       border-radius: 50%;
-      background-position: -170px -130px;
+      background-position: -40px -130px;
     }
     to {
       margin-left: -130px;
