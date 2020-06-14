@@ -1,5 +1,11 @@
 /* ELEMENT SELECTOR */
 
+main {
+    height: 100vh;
+    display: grid;
+    grid-template-rows: 100px auto 100px;
+  }
+
 /* CLASS SELECTOR */
 
 .body-box {

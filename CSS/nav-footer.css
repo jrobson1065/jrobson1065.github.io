@@ -26,6 +26,19 @@ body {
   font-family: var(--newFont);
 }
 
+canvas {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  z-index: 0;
+  background-color: var(--color1);
+}
+
+main {
+  position: relative;
+  z-index: 1;
+}
+
 .body-content {
   margin-top: 70px;
   padding-top: 20px;
