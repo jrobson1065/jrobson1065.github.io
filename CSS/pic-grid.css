@@ -31,6 +31,9 @@
     box-shadow: 0 0 40px grey, 5px 5px 15px 0 grey inset,
       -5px -5px 15px 0 grey inset;
     cursor: pointer;
+    background-image: url("/images/self.jpg");
+    filter: grayscale(100%);
+    background-size: 500px auto;
   }
   
   .pic1:hover,
@@ -41,117 +44,83 @@
   .pic6:hover,
   .pic7:hover,
   .pic8:hover,
-  .pic9:hover {
-    filter: grayscale(0);
-    opacity: 0.9;
-  }
-  
-  .pic1:active {
-    filter: grayscale(0);
-    opacity: 0.9;
-    animation: grow1 ease 0.5s forwards;
-  }
-  .pic2:active {
-    filter: grayscale(0);
-    opacity: 0.9;
-    animation: grow2 ease 0.5s forwards;
-  }
-  .pic3:active {
-    filter: grayscale(0);
-    opacity: 0.9;
-    animation: grow3 ease 0.5s forwards;
-  }
-  .pic4:active {
-    filter: grayscale(0);
-    opacity: 0.9;
-    animation: grow4 ease 0.5s forwards;
-  }
-  .pic5:active {
-    filter: grayscale(0);
-    opacity: 0.9;
-    animation: grow5 ease 0.5s forwards;
-  }
-  .pic6:active {
-    filter: grayscale(0);
-    opacity: 0.9;
-    animation: grow6 ease 0.5s forwards;
-  }
-  .pic7:active {
-    filter: grayscale(0);
-    opacity: 0.9;
-    animation: grow7 ease 0.5s forwards;
-  }
-  .pic8:active {
-    filter: grayscale(0);
-    opacity: 0.9;
-    animation: grow8 ease 0.5s forwards;
-  }
+  .pic9:hover,
+  .pic1:active,
+  .pic2:active,
+  .pic3:active,
+  .pic4:active,
+  .pic5:active,
+  .pic6:active,
+  .pic7:active,
+  .pic8:active,
   .pic9:active {
     filter: grayscale(0);
     opacity: 0.9;
+  }
+
+
+  
+  .pic1:active {
+    animation: grow1 ease 0.5s forwards;
+  }
+  .pic2:active {
+    animation: grow2 ease 0.5s forwards;
+  }
+  .pic3:active {
+    animation: grow3 ease 0.5s forwards;
+  }
+  .pic4:active {
+    animation: grow4 ease 0.5s forwards;
+  }
+  .pic5:active {
+    animation: grow5 ease 0.5s forwards;
+  }
+  .pic6:active {
+    animation: grow6 ease 0.5s forwards;
+  }
+  .pic7:active {
+    animation: grow7 ease 0.5s forwards;
+  }
+  .pic8:active {
+    animation: grow8 ease 0.5s forwards;
+  }
+  .pic9:active {
     animation: grow9 ease 0.5s forwards;
   }
 
   .pic1 {
-    background-image: url("/images/self.jpg");
-    filter: grayscale(100%);
-    background-size: 500px auto;
     background-position: -40px -130px;
   }
   
   .pic2 {
-    background-image: url("/images/self.jpg");
-    filter: grayscale(100%);
-    background-size: 500px auto;
     background-position: -170px -130px;
   }
   
   .pic3 {
-    background-image: url("/images/self.jpg");
-    filter: grayscale(100%);
-    background-size: 500px auto;
     background-position: -300px -130px;
   }
   
   .pic4 {
-    background-image: url("/images/self.jpg");
-    filter: grayscale(100%);
-    background-size: 500px auto;
     background-position: -40px -260px;
   }
   
   .pic5 {
-    background-image: url("/images/self.jpg");
-    filter: grayscale(100%);
-    background-size: 500px auto;
     background-position: -170px -260px;
   }
   
   .pic6 {
-    background-image: url("/images/self.jpg");
-    filter: grayscale(100%);
-    background-size: 500px auto;
     background-position: -300px -260px;
   }
   
   .pic7 {
-    background-image: url("/images/self.jpg");
-    filter: grayscale(100%);
-    background-size: 500px auto;
     background-position: -40px -390px;
   }
   
   .pic8 {
-    background-image: url("/images/self.jpg");
-    filter: grayscale(100%);
-    background-size: 500px auto;
     background-position: -170px -390px;
   }
   
   .pic9 {
-    background-image: url("/images/self.jpg");
-    filter: grayscale(100%);
-    background-size: 500px auto;
     background-position: -300px -390px;
   }
   
