@@ -6,9 +6,12 @@
     left: 0;
     width: 100vw;
     height: auto;
-    background-color: blueviolet;
     z-index: 2000;
     font-family: 'Love Ya Like A Sister', cursive;
+}
+
+canvas {
+    z-index: 1980;
 }
 
 .butterflies {
@@ -35,6 +38,9 @@
     margin-left: 400px;
     margin-top: 50px;
     font-size: 80pt;
+    position: relative;
+    z-index: 1995;
+    color: #b0d7ff;
 }
 
 hr {
@@ -48,7 +54,7 @@ hr {
     margin-top: 50px;
     border: 2px solid black;
     border-radius: 20px;
-    left: 350px;
+    left: 20%;
     height: auto;
     background-color: rgba(142, 71, 142, 0.5);
     display: flex;
@@ -58,8 +64,9 @@ hr {
 .comments {
     border: 2px solid black;
     border-radius: 20px;
-    width: 700px;
+    max-width: 700px;
     position: relative;
+    font-weight: bolder;
 }
 
 .person {
