@@ -77,8 +77,8 @@ hr {
     background-color: blanchedalmond;
 }
 
-.person {
-    
+.person:hover {
+    background-color: #eae8ff;
 }
 
 .comments .name {
