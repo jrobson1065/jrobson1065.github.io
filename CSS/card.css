@@ -60,21 +60,14 @@ hr {
     background-color: rgba(225, 85, 225, 0.7);
     display: flex;
     flex-direction: column;
-}
-
-.comments {
-    border: 2px solid black;
-    border-radius: 20px;
     max-width: 800px;
-    position: relative;
-    font-weight: bolder;
 }
 
 .person {
     border: 2px dashed black;
     padding: 20px;
-    margin-bottom: 10px;
-    border-radius: 10px;
+    margin-bottom: 20px;
+    border-radius: 50px;
     background-color: blanchedalmond;
 }
 
