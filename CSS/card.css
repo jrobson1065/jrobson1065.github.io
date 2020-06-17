@@ -1,0 +1,88 @@
+@import url('https://fonts.googleapis.com/css2?family=Love+Ya+Like+A+Sister&display=swap');
+
+.card-container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: auto;
+    background-color: blueviolet;
+    z-index: 2000;
+    font-family: 'Love Ya Like A Sister', cursive;
+}
+
+.butterflies {
+    width: auto;
+    height: 80%;
+    opacity: 0.9;
+}
+
+.butterflies:first-of-type {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1990;
+}
+
+.butterflies:last-of-type {
+    right: 0;
+    bottom: 0;
+    position: fixed;
+    z-index: 1990;
+}
+
+.title-container {
+    margin-left: 400px;
+    margin-top: 50px;
+    font-size: 80pt;
+}
+
+hr {
+    width: 650px;
+    border: 1px solid black;
+}
+
+.comments {
+    position: absolute;
+    padding: 20px;
+    margin-top: 50px;
+    border: 2px solid black;
+    border-radius: 20px;
+    left: 350px;
+    height: auto;
+    background-color: rgba(142, 71, 142, 0.5);
+    display: flex;
+    flex-direction: column;
+}
+
+.comments {
+    border: 2px solid black;
+    border-radius: 20px;
+    width: 700px;
+    position: relative;
+}
+
+.person {
+    border: 2px dashed black;
+    padding: 20px;
+    margin-bottom: 10px;
+    border-radius: 10px;
+    background-color: blanchedalmond;
+}
+
+.comments .name {
+    font-size: 20pt;
+    display: block;
+}
+
+.comments .name::before {
+    content: 'From: ';
+}
+
+.comments .name::after {
+    content: ' -- ';
+}
+
+.comments .comment {
+    font-size: 15pt;
+}
