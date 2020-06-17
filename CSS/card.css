@@ -45,7 +45,7 @@ canvas {
 
 hr {
     width: 650px;
-    border: 1px solid black;
+    border: 1px solid #b0d7ff;
 }
 
 .comments {
@@ -75,6 +75,10 @@ hr {
     margin-bottom: 10px;
     border-radius: 10px;
     background-color: blanchedalmond;
+}
+
+.person {
+    
 }
 
 .comments .name {
