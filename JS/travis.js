@@ -1,7 +1,7 @@
 var c = document.createElement("canvas");
-var ctx = canvas.getContext("2d");
-c.width = 1200;
-c.height = 800;
+var ctx = c.getContext("2d");
+c.width = 500;
+c.height = 350;
 document.body.appendChild(c);
 
 var perm = [];
@@ -30,7 +30,7 @@ var player = new function() {
 var t = 20;
 function loop() {
     t += 1;
-    ctx.fillStyle = 'green';
+    ctx.fillStyle = "#19f";
     ctx.fillRect(0,0,c.width, c.height);
 
     ctx.fillStyle = "black";
