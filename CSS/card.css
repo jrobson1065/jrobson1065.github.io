@@ -95,3 +95,11 @@ hr {
     padding: 15px;
     display: block;
 }
+
+.comments .comment::before {
+    content: '"';
+}
+
+.comments .comment::after {
+    content: '"';
+}
