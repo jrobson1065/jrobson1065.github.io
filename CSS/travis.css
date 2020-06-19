@@ -2,3 +2,90 @@
     margin: 0;
     padding: 0;
 }
+
+.game {
+    margin: 100px auto;
+    width: 800px;
+    height: 300px;
+    position: relative;
+    overflow: hidden;
+}
+
+.game-background {
+    width: 1600px;
+    height: 300px;
+    background-image: url('/travis/bg.jpg');
+    background-size: 800px 300px;
+    animation: bg-scroll 4s linear infinite;
+}
+
+.character {
+    width: 110px;
+    height: 100px;
+    background-image: url('/travis/dino.png');
+    background-size: cover;
+    background-repeat: repeat-x;
+    transform: scaleX(-1);
+    position: absolute;
+    bottom: 65px;
+    left: 20px;
+}
+
+.block {
+    width: 100px;
+    height: 100px;
+    background-image: url('/travis/corona.png');
+    background-size: contain;
+    position: absolute;
+    bottom: 65px;
+    right: 0;
+    animation: slide 4s linear infinite;
+}
+
+.jump {
+    animation: jump 1s;
+}
+
+.crouch {
+    animation: crouch 1s;
+}
+
+@keyframes slide {
+    0% {
+        right: -50%;
+    }
+    100% {
+        right: 150%;
+    }
+}
+
+@keyframes bg-scroll {
+    0% {
+        background-position-x: 100%;
+    }
+    100% {
+        background-position-x: -100%;
+    }
+}
+
+@keyframes jump {
+    0%, 100%{
+        bottom: 65px;
+    }
+    30%, 70% {
+        bottom: 190px;
+    }
+}
+
+@keyframes crouch {
+    0%, 100% {
+        bottom: 65px;
+        background-size: 110px 100px;
+        transform: scaleX(-1) skewY(0deg);
+    }
+    30%, 70% {
+        bottom: 15px;
+        background-size: 110px 50px;
+        transform: scaleX(-1) skewY(-20deg);
+    }
+}
