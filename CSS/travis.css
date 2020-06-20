@@ -1,7 +1,7 @@
 * {
   margin: 0;
   padding: 0;
-  font-family: 'Courier New', Courier, monospace;
+  font-family: "Courier New", Courier, monospace;
   font-size: 15pt;
   font-weight: bold;
 }
@@ -15,7 +15,8 @@
   border: 2px solid black;
 }
 
-.gameover, .you-win {
+.gameover,
+.you-win {
   background-color: black;
   width: 800px;
   height: 300px;
@@ -61,18 +62,18 @@
 }
 
 .points {
-    position: absolute;
-    right: 0;
-    top: 0;
-    margin: 20px;
-    width: auto;
-    height: auto;
-    background-color: rgba(123, 255, 211, 0.8);
-    border-radius: 20px;
-    line-height: 10px;
-    padding: 10px;
-    border: 1px solid black;
-    visibility: hidden;
+  position: absolute;
+  right: 0;
+  top: 0;
+  margin: 20px;
+  width: auto;
+  height: auto;
+  background-color: rgba(123, 255, 211, 0.8);
+  border-radius: 20px;
+  line-height: 10px;
+  padding: 10px;
+  border: 1px solid black;
+  visibility: hidden;
 }
 
 .character {
@@ -134,15 +135,21 @@
 }
 
 .start-btn {
-    margin-left: 350px;
+  margin-left: 350px;
 }
 
 .restart-btn {
-    margin-left: 330px;
+  margin-left: 330px;
 }
 
 .restart-btn {
   display: none;
+}
+
+.instructions {
+    width: 100%;
+    text-align: center;
+    margin-top: -90px;
 }
 
 @keyframes slide {
@@ -179,12 +186,10 @@
   100% {
     bottom: 65px;
     background-size: 110px 100px;
-    transform: scaleX(-1) skewY(0deg);
   }
   30%,
   70% {
     bottom: 15px;
     background-size: 110px 50px;
-    transform: scaleX(-1) skewY(-20deg);
   }
 }
