@@ -6,13 +6,23 @@
   font-weight: bold;
 }
 
+body {
+    background-color: #197259;
+}
+
+h1 {
+    font-size: 40pt;
+    text-align: center;
+    margin-top: 100px;
+}
+
 .game {
-  margin: 100px auto;
+  margin: 0 auto;
   width: 800px;
   height: 300px;
   position: relative;
   overflow: hidden;
-  border: 2px solid black;
+  border: 3px solid black;
 }
 
 .gameover,
@@ -22,11 +32,20 @@
   height: 300px;
   position: relative;
   z-index: 100;
-  line-height: 300px;
   text-align: center;
-  color: red;
   font-size: 40pt;
   display: none;
+}
+
+.gameover {
+  line-height: 300px;
+  color: red;
+}
+
+.you-win {
+    padding-top: 100px;
+    color: #197259;
+    text-shadow: 0 0 4px aquamarine, 0 0 10px aquamarine;
 }
 
 .game-background {
@@ -149,7 +168,13 @@
 .instructions {
     width: 100%;
     text-align: center;
-    margin-top: -90px;
+    margin-top: 10px;
+    font-size: 15.5pt;
+}
+
+strong {
+    font-size: 16pt;
+    text-decoration: underline;
 }
 
 @keyframes slide {

@@ -91,7 +91,7 @@ var checkHit = setInterval(function () {
   ) {
     lifeCount -= 1;
   }
-}, 210);
+}, 220);
 
 var checkLife = setInterval(function () {
   if (lifeCount == 3) {
@@ -114,14 +114,14 @@ var checkLife = setInterval(function () {
 
 var updatePoints = setInterval(function () {
   if (points > 0 && points < 500) {
-    points += 2;
+    points += 1;
     pointBox.innerHTML = points;
   }
-  if (points > 500) {
+  if (points >= 500) {
     gameEnd();
     gameWin();
   }
-}, 100);
+}, 80);
 
 function gameEnd() {
   block1.style.animation = "none";
