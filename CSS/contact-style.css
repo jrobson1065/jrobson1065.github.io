@@ -28,3 +28,7 @@
     text-decoration: none;
     color: var(--color2);
 }
+
+.body-content div span a:hover {
+    color: var(--color3);
+}
