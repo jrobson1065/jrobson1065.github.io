@@ -1,0 +1,58 @@
+/* SETUP */
+
+:root {
+  --color1: #032430;
+  --color2: #0d1553;
+  --color3: #31a0fe;
+  --color4: #89e5f6;
+  --color5: #d6daff;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
+
+/* ARTICLE */
+
+article {
+  width: 60vw;
+  overflow: scroll;
+}
+
+.main-img {
+  width: 60vw;
+  height: auto;
+}
+
+/* ASIDE */
+
+aside {
+  max-width: 500px;
+  padding: 50px;
+  font-size: 20pt;
+}
+
+.aside-title {
+  font-size: 30pt;
+  display: inline-block;
+  text-indent: 15px;
+  color: var(--color3);
+  font-weight: bold;
+  pointer-events: none;
+  text-shadow: 0 0 5px var(--color1), 0 0 2px var(--color1),
+    0 0 15px var(--color1);
+}
+
+.aside-title::first-letter {
+  font-size: 40pt;
+  color: var(--color3);
+}
+
+aside p {
+  color: var(--color1);
+}
+
+aside hr {
+  border: 1px solid var(--color1);
+  border-radius: 50%;
+  margin: 20px 0;
+}
+/* FOOTER */

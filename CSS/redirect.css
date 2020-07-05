@@ -1,0 +1,32 @@
+h1 .nochange {
+    font-size: 50pt;
+    text-decoration: none;
+    color: white;
+    line-height: 200px;
+}
+
+h1 .nochange:hover {
+    color: yellow;
+}
+
+header {
+    margin-top: -380px;
+}
+
+footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+.body-content {
+    height: 200px;
+    overflow: hidden;
+    padding: 15px;
+    background-color: transparent;
+}
+
+.body-container {
+    margin: 0 auto;
+    background-color: transparent;
+}

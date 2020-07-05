@@ -1,0 +1,157 @@
+:root {
+  --primary-color: #d79632;
+  --secondary-color: #21211f;
+  --tertiary-color: #626260;
+  --quaternary-color: #ffff76;
+  --quinary-color: grey;
+}
+
+* {
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+/* ELEMENT SELECTORS */
+
+a:hover {
+  cursor: pointer;
+}
+
+body {
+  background-image: URL("/images/piggybank.jpg");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  color: var(--quaternary-color);
+}
+
+h1 {
+  font-size: 40pt;
+}
+
+h2 {
+  font-size: 20pt;
+}
+
+input {
+  text-indent: 10px;
+  outline: none;
+  border: none;
+  font-size: 15pt;
+  margin: 5px auto;
+}
+
+/* CLASS SELECTORS */
+
+.button-div, .home-button {
+  background-color: var(--tertiary-color);
+  text-transform: uppercase;
+  font-size: 15pt;
+  border-radius: 25px;
+  border: none;
+  box-shadow: none;
+  text-align: center;
+  line-height: 50px;
+  cursor: pointer;
+  box-shadow: -5px -5px 0.5px var(--secondary-color) inset;
+}
+
+.button-div:active, .drop-down-head:active, .home-button:active {
+  box-shadow: 5px 5px 0.5px var(--secondary-color) inset;
+}
+
+.drop-down-head {
+  text-align: center;
+  border: solid 2px var(--secondary-color);
+  text-transform: uppercase;
+  line-height: 40px;
+  font-size: 15pt;
+  border-radius: 15px;
+  box-shadow: -5px -5px 0.5px var(--secondary-color) inset;
+  background-color: var(--quinary-color);
+}
+
+.drop-down-head:hover, .home-button:hover {
+  background: var(--primary-color);
+  cursor: pointer;
+  color: var(--secondary-color);
+}
+
+.footer {
+  background: var(--tertiary-color);
+  border: 0;
+  line-height: 50px;
+  color: var(--primary-color);
+  font-size: 15pt;
+}
+
+.header {
+  color: var(--primary-color);
+  text-shadow: 2px 2px 5px var(--secondary-color),
+    0 0 10px var(--secondary-color);
+  text-align: right;
+}
+
+.highlight {
+  background: var(--tertiary-color);
+}
+
+.input input:focus + label span,
+.input input:not(:placeholder-shown) + label span {
+  font-size: 12pt;
+}
+
+.input label {
+  color: var(--secondary-color);
+  pointer-events: none;
+  border-bottom: 1px solid var(--secondary-color);
+}
+
+.input label::after {
+  border-bottom: 3px solid var(--primary-color);
+  transform: translateX(-100%);
+  transition: all 0.5s ease;
+}
+
+.input input:not(:placeholder-shown):valid + label::after {
+  border-bottom: 3px solid rgba(0, 128, 0, 0.5);
+}
+
+.input input:not(:placeholder-shown):invalid + label::after {
+  border-bottom: 3px solid rgba(255, 0, 0, 0.5)
+}
+
+.input label span {
+  font-size: 16pt;
+  transition: all 0.5s ease;
+}
+
+.title-pressed {
+  background-color: var(--tertiary-color);
+  color: var(--primary-color);
+  box-shadow: 5px 5px 0.5px var(--secondary-color) inset;
+}
+
+.title-pressed:hover {
+  background-color: var(--tertiary-color);
+  color: var(--primary-color);
+}
+
+/* ID SELECTORS */
+
+#login-box {
+  border: solid 2px var(--secondary-color);
+  border-radius: 15px;
+  background: var(--tertiary-color);
+  opacity: 0.95;
+}
+
+#login-box ul {
+  list-style-type: none;
+}
+
+#login,
+#signup {
+  background: var(--quinary-color);
+  color: var(--primary-color);
+  font-weight: bolder;
+}

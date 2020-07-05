@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <base target="_top" />
+    <link href="CSS/fv-login-style.css" rel="stylesheet" />
+    <link href="CSS/fv-login-layout.css" rel="stylesheet" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Financial Visibility Guide</title>
+  </head>
+  <body>
+    <header>
+      <div class="header">
+        <h1>Financial Visibility Guide</h1>
+      </div>
+    </header>
+
+    <!-- LOG IN -->
+
+    <a href="./projects.html">
+      <button class="home-button">back</button>
+    </a>
+
+    <section id="login-box">
+      <span class="login-head">
+        <h2 class="center">Get Started</h2>
+        <hr />
+      </span>
+      <ul class="drop-down">
+        <li>
+          <div class="drop-down-container">
+            <span id="login-title" class="drop-down-head">Login</span>
+            <span id="signup-title" class="drop-down-head">Signup</span>
+          </div>
+          <div id="login-content" class="content">
+            <p>
+              Please log in to your account. If you do not have an account,
+              select "signup".
+            </p>
+            <form class="form">
+              <div class="input" id="login-first-name-container">
+                <input
+                  type="text"
+                  id="login-first-name"
+                  onkeypress="return (
+                    (event.charCode >= 65 && event.charCode <= 90) ||
+                    (event.charCode >= 97 && event.charCode <= 122) ||
+                    event.charCode == 32
+                  );"
+                  autocomplete="off"
+                  placeholder=" "
+                  name="login-first-name"
+                  class="highlight"
+                  required
+                />
+                <label for="login-first-name">
+                  <span>First Name</span>
+                </label>
+              </div>
+              <div class="input" id="login-email-container">
+                <input
+                  id="login-email"
+                  name="login-email"
+                  autocomplete="off"
+                  placeholder=" "
+                  type="email"
+                  class="highlight"
+                  required
+                />
+                <label for="login-email">
+                  <span>Email</span>
+                </label>
+              </div>
+              <div class="input" id="login-password-container">
+                <input
+                  id="login-password"
+                  name="login-password"
+                  placeholder=" "
+                  type="password"
+                  class="highlight"
+                  required
+                />
+                <label for="login-password">
+                  <span>Password</span>
+                </label>
+              </div>
+            </form>
+            <div id="login" class="button-div">Login</div>
+          </div>
+          <div id="signup-content" class="content">
+            <p>
+              Please enter the information that will be used for your account
+              login. If you already have an account, select "login".
+            </p>
+            <form class="form">
+              <div class="input" id="signup-first-name-container">
+                <input
+                  id="signup-first-name"
+                  name="signup-first-name"
+                  onkeypress="return (
+                    (event.charCode >= 65 && event.charCode <= 90) ||
+                    (event.charCode >= 97 && event.charCode <= 122) ||
+                    event.charCode == 32
+                  );"
+                  autocomplete="off"
+                  placeholder=" "
+                  type="text"
+                  class="highlight"
+                  required
+                />
+                <label for="signup-first-name">
+                  <span>First Name</span>
+                </label>
+              </div>
+              <div class="input" id="signup-email-container">
+                <input
+                  id="signup-email"
+                  name="signup-email"
+                  autocomplete="off"
+                  placeholder=" "
+                  type="email"
+                  class="highlight"
+                  required
+                />
+                <label for="signup-email">
+                  <span>Email</span>
+                </label>
+              </div>
+              <div class="input" id="signup-email-confirm-container">
+                <input
+                  id="signup-email-confirm"
+                  name="signup-email-confirm"
+                  autocomplete="off"
+                  placeholder=" "
+                  type="email"
+                  class="highlight"
+                  required
+                />
+                <label for="signup-email-confirm">
+                  <span>Confirm Email</span>
+                </label>
+              </div>
+              <div class="input" id="signup-password-container">
+                <input
+                  id="signup-password"
+                  name="signup-password"
+                  placeholder=" "
+                  type="password"
+                  class="highlight"
+                  required
+                />
+                <label for="signup-password">
+                  <span>Password</span>
+                </label>
+              </div>
+              <div class="input" id="signup-password-confirm-container">
+                <input
+                  id="signup-password-confirm"
+                  name="signup-password-confirm"
+                  placeholder=" "
+                  type="password"
+                  class="highlight"
+                  required
+                />
+                <label for="signup-password-confirm">
+                  <span>Confirm Password</span>
+                </label>
+              </div>
+              <div id="signup" class="button-div">signup</div>
+            </form>
+          </div>
+        </li>
+      </ul>
+      <div id="recover">
+        <p><a>Recover Password</a></p>
+      </div>
+    </section>
+
+    <!-- END LOG IN -->
+    <footer class="footer">
+      <div>
+        © 2020 John Robson
+      </div>
+    </footer>
+    <script src="JS/login.js"></script>
+  </body>
+</html>

@@ -1,0 +1,136 @@
+/* ELEMENT SELECTORS */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.home-button {
+  position: absolute;
+  left: 50px;
+  top: 50px;
+  padding: 10px 25px;
+}
+
+body {
+  max-height: 780px;
+}
+
+input {
+  height: 50px;
+  width: 100%;
+  padding-top: 20px;
+}
+
+p {
+  margin: 10px 0;
+}
+
+/* CLASS SELECTORS */
+
+.button-div {
+  width: 100%;
+  height: 50px;
+  margin: 20px auto;
+}
+
+.center {
+  text-align: center;
+}
+
+.column {
+  width: 100%;
+}
+
+.content {
+  display: none;
+}
+
+.drop-down-container {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  margin-top: 10px;
+}
+
+.drop-down-head {
+  height: 40px;
+  width: 100%;
+}
+
+.footer {
+  height: 50px;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  padding: 0 15px;
+}
+
+.header {
+  margin-right: 5%;
+}
+
+.input {
+  position: relative;
+  overflow: hidden;
+}
+
+.input input:focus + label span,
+.input input:not(:placeholder-shown) + label span {
+  transform: translateY(-150%);
+}
+
+.input input:focus + label::after,
+.input input:not(:placeholder-shown) + label::after {
+  transform: translateX(0);
+}
+
+.input label {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 70px;
+}
+
+.input label::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -1px;
+  height: 50px;
+  width: 100%;
+}
+
+.input label span {
+  position: absolute;
+  bottom: 5px;
+  left: 0;
+}
+
+.pressed {
+  display: block !important;
+}
+
+/* ID SELECTORS */
+
+#login-box {
+  position: absolute;
+  width: 400px;
+  height: auto;
+  right: 5%;
+  padding: 10px;
+  margin-top: 10px;
+}
+
+#login-title {
+  margin-right: 10px;
+}

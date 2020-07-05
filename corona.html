@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="CSS/corona.css" />
+    <title>Coronavirus Game</title>
+  </head>
+  <body>
+    <h1>Welcome!</h1>
+    <a href="./projects.html">
+      <button class="home-button">back</button>
+    </a>
+    <div class="game">
+      <div id="start-btn" class="start-btn">Start</div>
+      <div id="restart-btn" class="restart-btn">Start Over</div>
+      <div id="gameover" class="gameover">Game Over!</div>
+      <div id="you-win" class="you-win">
+        You beat the corona!
+      </div>
+      <div id="life-bar" class="life-bar">
+        <div id="life1" class="life"></div>
+        <div id="life2" class="life"></div>
+        <div id="life3" class="life"></div>
+      </div>
+      <div id="point-bar" class="points">
+        Points: <span id="points">00</span>
+      </div>
+      <div id="game-background" class="game-background"></div>
+      <div id="character" class="character"></div>
+      <div id="block1" class="block"></div>
+      <div id="block2" class="block"></div>
+    </div>
+    <div class="instructions">
+      Use <strong>SPACE</strong> or the <strong>UP ARROW</strong> to jump. Use
+      the <strong>DOWN ARROW</strong> to crouch.<br />
+      You get 3 lives. Evade the coronavirus and get 500 points to win!
+    </div>
+    <script src="js/corona.js"></script>
+  </body>
+</html>

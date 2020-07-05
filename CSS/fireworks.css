@@ -1,0 +1,33 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+canvas {
+    width: 100vw;
+    height: 100vh;
+    background-color: black;
+    cursor: crosshair;
+}
+
+h1 {
+    position: absolute;
+    width: 70%;
+    margin-left: 15%;
+    text-align: center;
+    color: transparent;
+    -webkit-text-stroke: 5px rgba(204, 182, 126, 0.582);
+    font-size: 150pt;
+    pointer-events: none;
+}
+
+h2 {
+    padding: 100px;
+    position: absolute;
+    font-size: 50pt;
+    color: transparent;
+    text-decoration: none;
+    -webkit-text-stroke: 2px rgba(204, 182, 126, 0.582);
+}
