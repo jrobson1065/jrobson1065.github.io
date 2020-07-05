@@ -31,4 +31,5 @@
 
 .body-content div span a:hover {
     color: var(--color3);
+    text-shadow: 0 0 2px var(--color3);
 }
