@@ -1,0 +1,80 @@
+:root {
+  --color1: #2d3142;
+  --color2: #b0d7ff;
+  --color3: #eae8ff;
+  --color4: #adacb5;
+  --color5: #d8d5db;
+  --handwritingFont: "Architects Daughter", monospace;
+  font-size: 50px;
+}
+
+header {
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+footer {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+}
+
+.body-content {
+  position: relative;
+  width: 80%;
+  margin-left: 10%;
+  padding: 15px;
+}
+
+.body-container {
+  width: 50%;
+  margin-left: 25%;
+  background-color: var(--color5);
+  display: flex;
+  flex-direction: column;
+  border-radius: 15px;
+}
+
+.title {
+  position: absolute;
+  top: 0;
+  width: 50%;
+  text-align: center;
+  color: var(--color1);
+}
+
+.project {
+    position: relative;
+}
+
+img {
+  display: none;
+  height: 200px;
+  width: 200px;
+  position: absolute;
+  left: 0;
+  top: 100%;
+}
+
+.project-list {
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+  width: 200px;
+  align-items: center;
+  justify-content: center;
+}
+
+.project:hover img {
+  display: flex;
+}
+
+.project a {
+  font-size: 20pt;
+  color: var(--color1);
+}
+
+.project:first-of-type {
+    margin-top: -200px;
+}

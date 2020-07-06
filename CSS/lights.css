@@ -1,0 +1,43 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: rgb(3, 3, 85);
+}
+
+h1 {
+    position: relative;
+    left: 250px;
+    top: 50px;
+    color: rgb(139, 197, 248);
+}
+
+button {
+    padding: 10px 20px;
+    margin-left: 50px;
+}
+
+canvas {
+    position: absolute;
+    left: 220px;
+    top: 100px;
+    background-color: black;
+}
+
+.attribute-form {
+    position: relative;
+    left: 20px;
+    top: 100px;
+    background-color: rgb(139, 197, 248);
+    border: 2px solid blue;
+    border-radius: 15px;
+    padding: 20px;
+    width: 170px;
+}
+
+.attribute-form input, .attribute-form select {
+    margin-top: 10px;
+}
