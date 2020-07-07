@@ -16,7 +16,7 @@ var canvas = document.querySelector("canvas"),
   fireworks = [],
   particles = [],
   hue = 120,
-  limiterTotal = 40,
+  limiterTotal = 80,
   limiterTick = 0,
   mousedown = true,
   mx,
@@ -97,7 +97,7 @@ function Particle(x, y) {
   this.x = x;
   this.y = y;
   this.coordinates = [];
-  this.coordinateCount = 5;
+  this.coordinateCount = 3;
   while (this.coordinateCount--) {
     this.coordinates.push([this.x, this.y]);
   }
@@ -139,6 +139,7 @@ Particle.prototype.draw = function () {
     "%, " +
     this.alpha +
     ")";
+  c.lineWidth = Math.random() * 10;
   c.stroke();
 };
 
@@ -174,7 +175,7 @@ function loop() {
 
   if (limiterTick >= limiterTotal) {
     if (mousedown) {
-      fireworks.push(new Firework(cw / 2, ch, mx, my));
+      fireworks.push(new Firework(cw/2, ch + 25, mx, my));
       limiterTick = 0;
     }
   } else {

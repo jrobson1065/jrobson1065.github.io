@@ -1,0 +1,33 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+canvas {
+    width: 100vw;
+    height: 100vh;
+    background-color: rgb(3, 3, 94);
+    cursor: crosshair;
+}
+
+h1 {
+    position: absolute;
+    width: 70%;
+    margin-left: 15%;
+    text-align: center;
+    color: transparent;
+    -webkit-text-stroke: 5px  rgb(112, 121, 252);
+    font-size: 150pt;
+    pointer-events: none;
+}
+
+h2 {
+    padding: 100px;
+    position: absolute;
+    font-size: 50pt;
+    color: transparent;
+    text-decoration: none;
+    -webkit-text-stroke: 2px rgb(112, 121, 252);
+}
