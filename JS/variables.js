@@ -18,4 +18,5 @@ const contactLinkedinBox = document.querySelector(".linkedin-text");
 const contactGithubBox = document.querySelector(".github-text");
 const resumeBox = document.querySelector("embed");
 const myName = document.querySelector(".my-name");
+let raySwitch = "on";
 

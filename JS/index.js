@@ -1,6 +1,7 @@
 function fullscreenLoadup() {
   mainBubble.style.opacity = "1";
 
+  stopRays();
   showAllBubbles();
   closeAbout();
   closeProjects();
@@ -21,6 +22,10 @@ function fullscreenLoadup() {
 
   homeBubble.style.display = "none";
   bubblesPopUp();
+
+  setTimeout(() => {
+    startRays();
+  }, 3000);
 }
 
 function bubblesPopUp() {
@@ -30,7 +35,7 @@ function bubblesPopUp() {
 
   setTimeout(() => {
     bubbles[0].style.bottom = "20px";
-  }, 2000);
+  }, 1400);
 
   setTimeout(() => {
     bubbles[1].style.bottom = "70px";
@@ -38,7 +43,7 @@ function bubblesPopUp() {
 
   setTimeout(() => {
     bubbles[1].style.bottom = "20px";
-  }, 2300);
+  }, 1700);
 
   setTimeout(() => {
     bubbles[2].style.bottom = "60px";
@@ -46,7 +51,7 @@ function bubblesPopUp() {
 
   setTimeout(() => {
     bubbles[2].style.bottom = "20px";
-  }, 2600);
+  }, 2000);
 
   setTimeout(() => {
     bubbles[3].style.bottom = "50px";
@@ -54,7 +59,7 @@ function bubblesPopUp() {
 
   setTimeout(() => {
     bubbles[3].style.bottom = "20px";
-  }, 2900);
+  }, 2300);
 }
 
 function fullscreenHomeClick() {

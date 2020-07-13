@@ -3,8 +3,7 @@ class Ray {
     this.div = div;
     this.angle = Math.random() * 90;
     this.direction = "up";
-    this.pace = Math.random() * 0.2 + 0.1;
-    this.height = Math.random() * 50 + 5;
+    this.pace = Math.random() * 0.1 + 0.05;
     this.opacity = Math.random() * 0.5 + 0.1;
     this.opacDir = "up";
   }
@@ -18,9 +17,9 @@ class Ray {
     if (this.opacity > 0.6) this.opacDir = "down";
     if (this.opacity < 0.1) this.opacDir = "up";
     if (this.opacDir === "up") {
-      this.opacity += 0.005;
+      this.opacity += 0.002;
     } else {
-      this.opacity -= 0.005;
+      this.opacity -= 0.002;
     }
   }
 }
@@ -29,6 +28,8 @@ const rays = [...document.querySelectorAll(".ray")].map((div) => new Ray(div));
 
 setInterval(() => {
   for (let i = 0; i < rays.length; i++) {
+    if (raySwitch === "on") {
       rays[i].update();
     }
-}, 50);
+  }
+}, 20);

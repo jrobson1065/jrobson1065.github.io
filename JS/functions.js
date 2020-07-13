@@ -1,18 +1,7 @@
-
 function showAllBubbles() {
   for (let i = 0; i < bubbles.length; i++) {
     bubbles[i].style.display = "block";
   }
-}
-
-function closeAbout() {
-  aboutBox.style.left = "-500px";
-  aboutBox2.style.left = "120%";
-
-  setTimeout(() => {
-    aboutBox.style.display = "none";
-    aboutBox2.style.display = "none";
-  }, 2000);
 }
 
 function openAbout() {
@@ -23,6 +12,16 @@ function openAbout() {
     aboutBox.style.left = "200px";
     aboutBox2.style.left = "700px";
   }, 10);
+}
+
+function closeAbout() {
+  aboutBox.style.left = "-500px";
+  aboutBox2.style.left = "120%";
+
+  setTimeout(() => {
+    aboutBox.style.display = "none";
+    aboutBox2.style.display = "none";
+  }, 2000);
 }
 
 let c = 0;
@@ -73,6 +72,7 @@ function closeContact() {
 
 function openResume() {
   resumeBox.style.display = "block";
+
   setTimeout(() => {
     resumeBox.style.height = "95vh";
   }, 10);
@@ -83,4 +83,22 @@ function closeResume() {
   setTimeout(() => {
     resumeBox.style.display = "none";
   }, 1000);
+}
+
+function stopRays() {
+  raySwitch = "off";
+}
+
+function startRays() {
+  raySwitch = "on";
+}
+
+for (let i = 0; i < bubbles.length; i++) {
+  bubbles[i].addEventListener("mouseover",()=>{
+    stopRays();
+  })
+
+  mainBubble.addEventListener("mouseover",()=>{
+    startRays();
+  })
 }
