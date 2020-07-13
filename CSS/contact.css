@@ -1,0 +1,119 @@
+@import url("https://fonts.googleapis.com/css2?family=Julius+Sans+One&display=swap");
+
+:root {
+  --color1: #ffc6d9;
+  --color2: #51d6ff;
+  --color3: #fff07c;
+  --color4: #80ff72;
+  --color5: #545454;
+  --color6: #191919;
+  --color7: #f0f8ff;
+  --font1: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  --font2: "Julius Sans One", "Lucida Sans", "Lucida Sans Regular",
+    "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
+
+.email-text,
+.linkedin-text,
+.github-text {
+  border: 5px solid var(--color7);
+  height: auto;
+  padding: 50px 30px;
+  border-radius: 30px;
+  position: fixed;
+  z-index: 5;
+  transition: all 1s ease;
+}
+
+.email-text {
+  top: 300px;
+  left: -500px;
+  width: 400px;
+  background-color: var(--color4);
+}
+
+.linkedin-text {
+  top: 300px;
+  left: 2000px;
+  width: 400px;
+  background-color: var(--color1);
+}
+
+.github-text {
+  top: 120%;
+  left: 500px;
+  width: 400px;
+  background-color: var(--color3);
+}
+
+.email-text:hover {
+  border-color: var(--color1);
+}
+
+.linkedin-text:hover {
+  border-color: var(--color3);
+}
+
+.github-text:hover {
+  border-color: var(--color4);
+}
+
+.email-title,
+.linkedin-title,
+.github-title {
+  position: absolute;
+  top: -20px;
+  margin-top: -15px;
+  text-align: center;
+  z-index: 1;
+  font-size: 25pt;
+  padding: 10px;
+  border-radius: 15px;
+  font-family: var(--font2);
+  transition: all 0.5s ease;
+  border: 5px solid var(--color7);
+  cursor: default;
+}
+
+.email-title {
+  background-color: var(--color4);
+}
+
+.linkedin-title {
+  background-color: var(--color1);
+}
+
+.github-title {
+  background-color: var(--color3);
+}
+
+.email-text .email-title:hover,
+.linkedin-text .linkedin-title:hover,
+.github-text .github-title:hover {
+  font-weight: bolder;
+  font-size: 26pt;
+  margin-left: -2px;
+}
+
+.email-text .email-title:hover {
+  border-color: var(--color1);
+}
+
+.linkedin-text .linkedin-title:hover {
+  border-color: var(--color3);
+}
+
+.github-text .github-title:hover {
+  border-color: var(--color4);
+}
+
+.contact-link {
+    font-family: var(--font1);
+    font-size: 20pt;
+    color: var(--color6);
+}
+
+.contact-link:hover {
+  font-weight: bolder;
+}

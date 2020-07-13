@@ -3,130 +3,236 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link href="CSS/index-style.css" rel="stylesheet" />
-    <link href="CSS/index-layout.css" rel="stylesheet" />
-    <link href="CSS/letter-animation.css" rel="stylesheet" />
-    <link href="CSS/img-animation.css" rel="stylesheet" />
-    <link href="CSS/pic-grid.css" rel="stylesheet" />
-    <link href="CSS/nav-footer.css" rel="stylesheet" />
-    <link href="CSS/card.css" rel="stylesheet" />
-    <link rel="icon" href="./images/star.ico" />
-    <title>John Robson's Portfolio</title>
+    <link rel="stylesheet" href="css/nav.css" />
+    <link rel="stylesheet" href="css/about.css" />
+    <link rel="stylesheet" href="css/projects.css" />
+    <link rel="stylesheet" href="css/resume.css" />
+    <link rel="stylesheet" href="css/contact.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Hi+Melody&display=swap"
+      rel="stylesheet"
+    />
+    <title>John Robson</title>
   </head>
   <body>
-
-    <canvas></canvas>
+    <section class="sunrays">
+      <div class="ray"></div>
+      <div class="ray"></div>
+      <div class="ray"></div>
+      <div class="ray"></div>
+      <div class="ray"></div>
+      <div class="ray"></div>
+      <div class="ray"></div>
+      <div class="ray"></div>
+      <div class="ray"></div>
+    </section>
     <main>
-      <header>
-        <div id="my-name">
-          <div class="letter special-font">J</div>
-          <div class="letter special-font">o</div>
-          <div class="letter special-font">h</div>
-          <div class="letter special-font">n</div>
-          <div class="letter special-font">&#10039;</div>
-          <div class="letter special-font">R</div>
-          <div class="letter special-font">o</div>
-          <div class="letter special-font">b</div>
-          <div class="letter special-font">s</div>
-          <div class="letter special-font">o</div>
-          <div class="letter special-font">n</div>
-        </div>
-        <div class="tagline-container">
-          <span class="tagline">{ &nbsp;FULL STACK SOFTWARE SAMURAI&nbsp; }</span>
-        </div>
+      <div class="disabled">
+        <span>
+          CURRENTLY DISABLED ON SMALLER SCREENS. PLEASE VIEW ON A FULL SCREEN
+          COMPUTER. FULLY RESPONSIVE DESIGN WILL BE SUPPORTED SHORTLY.
+          <br /><br />
+          REQUIRED SCREEN WIDTH IS 1300PX.
+        </span>
+      </div>
 
-        <nav>
-          <div class="nav-bar">
-            <a class="nav-font nav-link current-link">Home</a>
-            <a class="nav-font nav-link" href="about.html">About</a>
-            <a class="nav-font nav-link" href="projects.html">Projects</a>
-            <a class="nav-font nav-link" href="contact.html">Contact</a>
-          </div>
-        </nav>
-      </header>
+      <!-- ABOUT -->
 
-      <section class="body-content">
-        <div class="pic-box">
-          <div class="pic-container">
-            <div class="pic-bubble pic1"></div>
-            <div class="pic-bubble pic2"></div>
-            <div class="pic-bubble pic3"></div>
-            <div class="pic-bubble pic4"></div>
-            <div class="pic-bubble pic5"></div>
-            <div class="pic-bubble pic6"></div>
-            <div class="pic-bubble pic7"></div>
-            <div class="pic-bubble pic8"></div>
-            <div class="pic-bubble pic9"></div>
-          </div>
-          <div class="pic-underlay"></div>
-          <div class="duck-text">
-            just a little duck in a big world...
-          </div>
-        </div>
+      <section class="about-text">
+        <span class="about-title">About Me</span>
+        <p>
+          I'm a full stack web developer in Columbus, OH. I have experience in
+          both front end and back end web development. I am collaboration-minded
+          and love designing quality projects.
+        </p>
+        <div class="about-img"></div>
       </section>
 
-      <footer>
-        <div class="footer-bar">
-          <div class="footer-content">
-            <span>©John Robson 2020</span>
-            <div>
-              <ul class="skills">
-                <li>
-                  <figure>
-                    <img
-                      id="javalogo"
-                      src="images/java.png"
-                      title="Java"
-                      alt="Java Logo"
-                    />
-                  </figure>
-                </li>
-                <li>
-                  <figure>
-                    <img
-                      id="htmllogo"
-                      src="images/html.png"
-                      title="HTML"
-                      alt="HTML Logo"
-                    />
-                  </figure>
-                </li>
-                <li>
-                  <figure>
-                    <img
-                      id="csslogo"
-                      src="images/css.png"
-                      title="CSS"
-                      alt="CSS Logo"
-                    />
-                  </figure>
-                </li>
-                <li>
-                  <figure>
-                    <img
-                      id="jslogo"
-                      src="images/JavaScript.png"
-                      title="JavaScript"
-                      alt="JavaScript Logo"
-                    />
-                  </figure>
-                </li>
-                <li>
-                  <figure>
-                    <img
-                      id="tddlogo"
-                      src="images/tdd.png"
-                      title="TDD"
-                      alt="TDD Logo"
-                    />
-                  </figure>
-                </li>
-              </ul>
-            </div>
-          </div>
+      <section class="about-text2">
+        <span class="about-title2">Hobbies</span>
+        <p>
+          I love animals and plants. I'm vegetarian. I really enjoy a good
+          adventure, whether it's a hiking, kayaking, backpacking, driving, or
+          traveling! I also love to paint, play video games, hang out with
+          friends, and go out to dinner.
+        </p>
+      </section>
+
+      <!-- PROJECTS -->
+
+      <section class="java-text">
+        <span class="java-title">Java</span>
+        <ul>
+          <li>
+            <a
+              href="https://github.com/jrobson1065/fizzbuzz-java-jrobson1065"
+              target="_blank"
+              class="project"
+              >FizzBuzz (Console App)
+              <img class="screenshot" src="/images/fizzbuzz.jpg" alt="" />
+            </a>
+          </li>
+          <li>
+            <a
+              href="https://github.com/2020-Summer-Cohort/blog-java-mostvaluablecoders"
+              target="_blank"
+              class="project"
+              >MostValuableCoders (Spring MVC)
+              <img class="screenshot" src="/images/mvc.jpg" alt="" />
+            </a>
+          </li>
+          <li>
+            <a
+              href="https://github.com/jrobson1065/virtual-pets-amok-java-jrobson1065"
+              target="_blank"
+              class="project"
+              >Virtual Pets Amok (OOP Interfaces)
+              <img class="screenshot" src="/images/pets-amok.jpg" alt="" />
+            </a>
+          </li>
+        </ul>
+      </section>
+
+      <section class="html-text">
+        <span class="html-title">HTML/CSS</span>
+        <ul>
+          <li>
+            <a href="./fv-login.html" target="_top" class="project"
+              >Financial Visibility Login Page
+              <img class="screenshot" src="/images/fv-login.jpg" alt="" />
+            </a>
+          </li>
+          <li>
+            <a href="./mvc.html" target="_top" class="project"
+              >MostValuableCoders
+              <img class="screenshot" src="/images/mvc-page.jpg" alt="" />
+            </a>
+          </li>
+        </ul>
+      </section>
+
+      <section class="js-text">
+        <span class="js-title">JavaScript</span>
+        <ul>
+          <li>
+            <a href="./corona.html" target="_top" class="project"
+              >Coronavirus Mini-game
+              <img class="screenshot" src="/images/corona.jpg" alt="" />
+            </a>
+          </li>
+          <li>
+            <a href="./donut.html" target="_top" class="project"
+              >Donut Maker Mini-game
+              <img class="screenshot" src="/images/donut-project.jpg" alt="" />
+            </a>
+          </li>
+          <li>
+            <a href="./fireworks.html" target="_top" class="project"
+              >Happy Fourth Fireworks
+              <img class="screenshot" src="/images/fourth.jpg" alt="" />
+            </a>
+          </li>
+          <li>
+            <a href="./lights.html" target="_top" class="project"
+              >Border Lights Project
+              <img class="screenshot" src="/gifs/lights.gif" alt="" />
+            </a>
+          </li>
+          <li>
+            <a href="./waves.html" target="_top" class="project"
+              >Water Ripples
+              <img class="screenshot" src="/gifs/waves.gif" alt="" />
+            </a>
+          </li>
+          <li>
+            <a href="./jsnavs.html" target="_top" class="project"
+              >Pure JS Nav Menus
+              <img class="screenshot" src="/gifs/jsnavs.gif" alt="" />
+            </a>
+          </li>
+        </ul>
+      </section>
+
+      <section class="project-img">
+        <div class="tag">&#128522;</div>
+      </section>
+
+      <embed src="/images/resume.pdf" />
+
+      <!-- CONTACT -->
+
+      <section class="email-text">
+        <span class="email-title">Email</span>
+        <a class="contact-link" href="mailto:j.robson1065@gmail.com"
+          >j.robson1065@gmail.com</a
+        >
+      </section>
+
+      <section class="linkedin-text">
+        <span class="linkedin-title">Linked-In</span>
+        <a
+          class="contact-link"
+          href="https://www.linkedin.com/in/johnrobson11/"
+          target="_blank"
+          >LinkedIn/johnrobson11</a
+        >
+      </section>
+
+      <section class="github-text">
+        <span class="github-title">GitHub</span>
+        <a
+          class="contact-link"
+          href="https://github.com/jrobson1065"
+          target="_blank"
+          >GitHub/jrobson1065</a
+        >
+      </section>
+
+      <!-- MAIN -->
+
+      <span class="my-name"
+        >J<br />o<br />h<br />n<br /><br />R<br />o<br />b<br />s<br />o<br />n</span
+      >
+      <div class="outer">
+        <div class="inner">
+          <span>Coding With A Smile.</span>
         </div>
-      </footer>
+      </div>
+      <div class="bubble-outer about-bubble">
+        <div class="bubble-inner about-bubble-inner">
+          <span>About.</span>
+        </div>
+      </div>
+      <div class="bubble-outer projects-bubble">
+        <div class="bubble-inner projects-bubble-inner">
+          <span>Projects.</span>
+        </div>
+      </div>
+      <div class="bubble-outer resume-bubble">
+        <div class="bubble-inner resume-bubble-inner">
+          <span>Resume.</span>
+        </div>
+      </div>
+      <div class="bubble-outer contact-bubble">
+        <div class="bubble-inner contact-bubble-inner">
+          <span>Contact.</span>
+        </div>
+      </div>
+      <div class="bubble-outer home-bubble">
+        <div class="bubble-inner home-bubble-inner">
+          <span>Home.</span>
+        </div>
+      </div>
     </main>
-    <script src="JS/canvas.js"></script>
+    <footer>&copy; John Robson 2020</footer>
+    <script src="js/variables.js"></script>
+    <script src="js/functions.js"></script>
+    <script src="js/sunrays.js"></script>
+    <script src="js/index.js"></script>
+    <script src="js/about.js"></script>
+    <script src="js/projects.js"></script>
+    <script src="js/resume.js"></script>
+    <script src="js/contact.js"></script>
+    <script src="js/responsiveDesign.js"></script>
   </body>
 </html>

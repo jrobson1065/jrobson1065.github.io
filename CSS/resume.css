@@ -1,0 +1,10 @@
+embed {
+    width: 800px;
+    height: 0;
+    position: fixed;
+    left: 450px;
+    top: 2.5vh;
+    z-index: 100;
+    display: none;
+    transition: all 1s ease;
+}

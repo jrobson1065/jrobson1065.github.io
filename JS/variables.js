@@ -1,0 +1,21 @@
+const mainBubble = document.querySelector("main .outer");
+const homeBubble = document.querySelector(".home-bubble");
+const aboutBubble = document.querySelector(".about-bubble");
+const projectsBubble = document.querySelector(".projects-bubble");
+const resumeBubble = document.querySelector(".resume-bubble");
+const contactBubble = document.querySelector(".contact-bubble");
+const bubbles = document.querySelectorAll(".bubble-outer");
+const aboutBox = document.querySelector(".about-text");
+const aboutBox2 = document.querySelector(".about-text2");
+const aboutImg = document.querySelector(".about-img");
+const projectImgBox = document.querySelector(".project-img");
+const projectJavaBox = document.querySelector(".java-text");
+const projectHTMLBox = document.querySelector(".html-text");
+const projectJSBox = document.querySelector(".js-text");
+const projectImages = document.querySelectorAll(".screenshot");
+const contactEmailBox = document.querySelector(".email-text");
+const contactLinkedinBox = document.querySelector(".linkedin-text");
+const contactGithubBox = document.querySelector(".github-text");
+const resumeBox = document.querySelector("embed");
+const myName = document.querySelector(".my-name");
+

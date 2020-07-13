@@ -1,0 +1,112 @@
+@import url("https://fonts.googleapis.com/css2?family=Julius+Sans+One&display=swap");
+
+:root {
+  --color1: #ffc6d9;
+  --color2: #51d6ff;
+  --color3: #fff07c;
+  --color4: #80ff72;
+  --color5: #545454;
+  --color6: #191919;
+  --color7: #f0f8ff;
+  --font1: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+  "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  --font2: "Julius Sans One", "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
+
+.about-text, .about-text2 {
+  border: 5px solid var(--color7);
+  height: auto;
+  padding: 50px;
+  border-radius: 30px;
+  position: fixed;
+  z-index: 5;
+  transition: all 1s ease, left 2s ease;
+  top: 200px;
+}
+
+.about-text {
+  width: 300px;
+  background-color: var(--color4);
+}
+
+.about-text2 {
+  width: 330px;
+  background-color: var(--color1);
+}
+
+.about-text:hover {
+  border-color: var(--color1);
+}
+
+.about-text2:hover {
+  border-color: var(--color3);
+}
+
+.about-title, .about-title2 {
+  position: absolute;
+  top: -20px;
+  margin-top: -15px;
+  text-align: center;
+  z-index: 1;
+  font-size: 25pt;
+  padding: 10px;
+  border-radius: 15px;
+  font-family: var(--font2);
+  transition: all 0.5s ease;
+  border: 5px solid var(--color7);
+}
+
+.about-title {
+  margin-left: -10px;
+  background-color: var(--color4);
+}
+
+.about-title2 {
+  margin-left: 30px;
+  background-color: var(--color1);
+}
+
+.about-text p, .about-text2 p {
+  font-size: 15pt;
+  font-family: var(--font1);
+  cursor: default;
+}
+
+.about-text .about-img {
+  background-image: url(/images/self.jpg);
+  background-size: 200px auto;
+  background-position-y: -40px;
+  border: 5px solid var(--color7);
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  transform: translateX(50%) translateY(50%);
+  transition: all 1s ease, background-image 3s ease;
+}
+
+.about-text .about-img:hover {
+  background-size: 400px auto;
+  width: 400px;
+  height: 400px;
+  border-color: var(--color1);
+}
+
+.about-text .about-title:hover, .about-text2 .about-title2:hover {
+  font-weight: bolder;
+  font-size: 26pt;
+  cursor: default;
+}
+
+.about-text .about-title:hover {
+  margin-left: -12px;
+  border-color: var(--color1);
+}
+
+.about-text2 .about-title2:hover {
+  margin-left: 28px;
+  border-color: var(--color3);
+}
