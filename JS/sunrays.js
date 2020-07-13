@@ -32,9 +32,3 @@ setInterval(() => {
       rays[i].update();
     }
 }, 50);
-
-setInterval(() => {
-  for (let i = 0; i < rays.length; i++) {
-    rays[i].flicker();
-  }
-}, 500);
