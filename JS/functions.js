@@ -7,7 +7,7 @@ function showAllBubbles() {
 
 function closeAbout() {
   aboutBox.style.left = "-500px";
-  aboutBox2.style.left = "2000px";
+  aboutBox2.style.left = "120%";
 
   setTimeout(() => {
     aboutBox.style.display = "none";
@@ -51,7 +51,7 @@ function openProjects() {
 function closeProjects() {
   projectImgBox.style.bottom = "-500px";
   projectJavaBox.style.top = "-400px";
-  projectHTMLBox.style.left = "2000px";
+  projectHTMLBox.style.left = "120%";
   projectJSBox.style.left = "-450px";
 
   for (let i = 0; i < projectImages.length; i++) {
@@ -67,7 +67,7 @@ function openContact() {
 
 function closeContact() {
   contactEmailBox.style.left = "-500px";
-  contactLinkedinBox.style.left = "2000px";
+  contactLinkedinBox.style.left = "120%";
   contactGithubBox.style.top = "120%";
 }
 

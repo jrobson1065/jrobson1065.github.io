@@ -35,7 +35,7 @@
 
 .html-text {
   top: 50px;
-  left: 2000px;
+  left: 120%;
   width: 400px;
   background-color: var(--color1);
 }
