@@ -1,4 +1,4 @@
-function loadup() {
+function fullscreenLoadup() {
   mainBubble.style.opacity = "1";
 
   showAllBubbles();
@@ -55,4 +55,10 @@ function bubblesPopUp() {
   setTimeout(() => {
     bubbles[3].style.bottom = "20px";
   }, 2900);
+}
+
+function fullscreenHomeClick() {
+  homeBubble.addEventListener("click", () => {
+    fullscreenLoadup();
+  });
 }

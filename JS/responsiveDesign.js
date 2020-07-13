@@ -1,8 +1,12 @@
 let sw = window.innerWidth;
 
 if (sw >= 1300) {
-  loadup();
+  fullscreenLoadup();
+  fullscreenHomeClick();
   fullscreenAboutClick();
+  fullscreenContactClick();
+  fullscreenResumeClick();
+  fullscreenProjectsClick();
 }
 
 if (sw < 1300) {

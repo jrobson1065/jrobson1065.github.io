@@ -20,10 +20,6 @@ function fullscreenAboutClick() {
       contactBubble.style.bottom = "20px";
     }, 10);
   });
-
-  homeBubble.addEventListener("click", () => {
-    loadup();
-  });
 }
 
 imgRotator();
