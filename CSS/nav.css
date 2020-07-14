@@ -27,17 +27,16 @@ body {
 .my-name {
   position: fixed;
   top: 50%;
+  left: 0;
   transform: translateY(-50%);
   text-align: center;
   width: 100px;
-  height: 100%;
-  font-size: 40pt;
+  font-size: 30pt;
   font-family: var(--font2);
   font-weight: bolder;
   color: var(--color3);
   pointer-events: none;
   text-shadow: -7px 0 var(--color5), -4px 0 var(--color5);
-  margin: 50px;
 }
 
 main {
@@ -104,8 +103,8 @@ main .inner span {
   position: fixed;
   background-color: var(--color7);
   border: 5px solid var(--color7);
-  width: 150px;
-  height: 150px;
+  width: 100px;
+  height: 100px;
   border-radius: 50%;
   transition: all 0.3s linear;
   box-sizing: content-box
@@ -115,15 +114,15 @@ main .inner span {
   background-color: var(--color7);
   border: 5px solid var(--color4);
   border-radius: 50%;
-  width: 150px;
-  height: 150px;
+  width: 100px;
+  height: 100px;
   left: 50%;
   top: 50%;
   transform: translateX(-50%) translateY(-50%);
   padding: 20px;
   position: absolute;
   font-family: var(--font2);
-  font-size: 20pt;
+  font-size: 13pt;
   cursor: pointer;
 }
 

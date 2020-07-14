@@ -9,8 +9,8 @@ function openAbout() {
   aboutBox2.style.display = "block";
 
   setTimeout(() => {
-    aboutBox.style.left = "200px";
-    aboutBox2.style.left = "700px";
+    aboutBox.style.left = "15%";
+    aboutBox2.style.left = "50%";
   }, 10);
 }
 
@@ -39,8 +39,8 @@ function imgRotator() {
 function openProjects() {
   projectImgBox.style.bottom = "50px";
   projectJavaBox.style.top = "50px";
-  projectHTMLBox.style.left = "850px";
-  projectJSBox.style.left = "400px";
+  projectHTMLBox.style.left = "60%";
+  projectJSBox.style.left = "20%";
 
   for (let i = 0; i < projectImages.length; i++) {
     projectImages[i].style.display = "block";
@@ -54,14 +54,14 @@ function closeProjects() {
   projectJSBox.style.left = "-450px";
 
   for (let i = 0; i < projectImages.length; i++) {
-    projectImages[i].style.display = "block";
+    projectImages[i].style.display = "none";
   }
 }
 
 function openContact() {
-  contactEmailBox.style.left = "200px";
-  contactLinkedinBox.style.left = "800px";
-  contactGithubBox.style.top = "500px";
+  contactEmailBox.style.left = "20%";
+  contactLinkedinBox.style.left = "60%";
+  contactGithubBox.style.top = "70%";
 }
 
 function closeContact() {
@@ -72,6 +72,7 @@ function closeContact() {
 
 function openResume() {
   resumeBox.style.display = "block";
+  resumeBox.style.left = (sw - bubbleHeight - 100 - 800) / 2 + bubbleHeight + 100 + "px";
 
   setTimeout(() => {
     resumeBox.style.height = "95vh";

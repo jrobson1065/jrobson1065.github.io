@@ -9,17 +9,17 @@ function fullscreenProjectsClick() {
       openProjects();
 
       setTimeout(() => {
-        homeBubble.style.left = "150px";
-        homeBubble.style.bottom = "560px";
-        aboutBubble.style.left = "150px";
-        aboutBubble.style.bottom = "380px";
+        homeBubble.style.left = "80px";
+        homeBubble.style.bottom = ((sh - (4 * bubbleHeight)) / 5) * 4 + (3 * bubbleHeight) + "px";
+        aboutBubble.style.left = "80px";
+        aboutBubble.style.bottom = ((sh - (4 * bubbleHeight)) / 5) * 3 + (2 * bubbleHeight) + "px";
         projectsBubble.style.left = "-200px";
-        projectsBubble.style.bottom = "200px";
+        projectsBubble.style.bottom = ((sh - (4 * bubbleHeight)) / 5) * 3 + (2 * bubbleHeight) + "px";
         projectsBubble.style.display = "none";
-        resumeBubble.style.left = "150px";
-        resumeBubble.style.bottom = "200px";
-        contactBubble.style.left = "150px";
-        contactBubble.style.bottom = "20px";
+        resumeBubble.style.left = "80px";
+        resumeBubble.style.bottom = ((sh - (4 * bubbleHeight)) / 5) * 2 + bubbleHeight + "px";
+        contactBubble.style.left = "80px";
+        contactBubble.style.bottom = (sh - (4 * bubbleHeight)) / 5 + "px";
         mainBubble.style.opacity = "0.3";
       }, 100);
     }, 200);

@@ -17,22 +17,24 @@
 .about-text, .about-text2 {
   border: 5px solid var(--color7);
   height: auto;
-  padding: 50px;
+  padding: 50px 25px;
   border-radius: 30px;
   position: fixed;
-  z-index: 5;
   transition: all 1s ease, left 2s ease;
-  top: 200px;
+  top: 50%;
+  transform: translateY(-50%);
 }
 
 .about-text {
-  width: 300px;
+  width: 250px;
   background-color: var(--color4);
+  z-index: 5;
 }
 
 .about-text2 {
-  width: 330px;
+  width: 250px;
   background-color: var(--color1);
+  z-index: 4;
 }
 
 .about-text:hover {
@@ -45,11 +47,14 @@
 
 .about-title, .about-title2 {
   position: absolute;
-  top: -20px;
-  margin-top: -15px;
+  top: -35px;
+  left: 50%;
+  width: 200px;
+  transform: translateX(-50%);
   text-align: center;
   z-index: 1;
-  font-size: 25pt;
+  font-size: 20pt;
+  line-height: 25pt;
   padding: 10px;
   border-radius: 15px;
   font-family: var(--font2);
@@ -58,17 +63,15 @@
 }
 
 .about-title {
-  margin-left: -10px;
   background-color: var(--color4);
 }
 
 .about-title2 {
-  margin-left: 30px;
   background-color: var(--color1);
 }
 
 .about-text p, .about-text2 p {
-  font-size: 15pt;
+  font-size: 13pt;
   font-family: var(--font1);
   cursor: default;
 }
@@ -89,24 +92,21 @@
 }
 
 .about-text .about-img:hover {
-  background-size: 400px auto;
-  width: 400px;
-  height: 400px;
+  background-size: 300px auto;
+  width: 300px;
+  height: 300px;
   border-color: var(--color1);
 }
 
 .about-text .about-title:hover, .about-text2 .about-title2:hover {
   font-weight: bolder;
-  font-size: 26pt;
   cursor: default;
 }
 
 .about-text .about-title:hover {
-  margin-left: -12px;
   border-color: var(--color1);
 }
 
 .about-text2 .about-title2:hover {
-  margin-left: 28px;
   border-color: var(--color3);
 }

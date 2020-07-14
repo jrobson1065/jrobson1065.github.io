@@ -13,12 +13,12 @@ function fullscreenLoadup() {
     bubbles[i].style.top = "";
   }
 
-  homeBubble.style.left = "200px";
+  homeBubble.style.left = sw / 5 + "px";
   homeBubble.style.bottom = "20px";
-  aboutBubble.style.left = "200px";
-  projectsBubble.style.left = "500px";
-  resumeBubble.style.left = "800px";
-  contactBubble.style.left = "1100px";
+  aboutBubble.style.left = sw / 5 + "px";
+  projectsBubble.style.left = (sw / 5) * 2 + "px";
+  resumeBubble.style.left = (sw / 5) * 3 + "px";
+  contactBubble.style.left = (sw / 5) * 4 + "px";
 
   homeBubble.style.display = "none";
   bubblesPopUp();

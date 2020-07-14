@@ -1,6 +1,4 @@
-let sw = window.innerWidth;
-
-if (sw >= 1300) {
+if (sw >= 1000) {
   fullscreenLoadup();
   fullscreenHomeClick();
   fullscreenAboutClick();
@@ -9,14 +7,10 @@ if (sw >= 1300) {
   fullscreenProjectsClick();
 }
 
-if (sw < 1300) {
+if (sw < 1000) {
     document.querySelector(".disabled").style.display = "block";
 }
 
 if (sw > 800 && sw < 1300) {
 
 }
-
-window.addEventListener("resize", () => {
-  location.reload();
-});

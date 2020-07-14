@@ -2,7 +2,7 @@ embed {
     width: 800px;
     height: 0;
     position: fixed;
-    left: 450px;
+    right: 20px;
     top: 2.5vh;
     z-index: 100;
     display: none;
