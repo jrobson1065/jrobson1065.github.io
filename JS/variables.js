@@ -17,12 +17,13 @@ const projectImages = document.querySelectorAll(".screenshot");
 const contactEmailBox = document.querySelector(".email-text");
 const contactLinkedinBox = document.querySelector(".linkedin-text");
 const contactGithubBox = document.querySelector(".github-text");
-const resumeBox = document.querySelector("embed");
+const resumeBox = document.querySelector("iframe");
 const myName = document.querySelector(".my-name");
 let bubbleHeight = 0;
 let sw = window.innerWidth;
 let sh = window.innerHeight;
 let raySwitch = "on";
+let pageSwitch = "off";
 
 for (let i = 0; i < bubbles.length; i++) {
   let bubble = bubbles[i];

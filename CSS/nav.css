@@ -99,6 +99,23 @@ main .inner span {
   margin-top: 26px;
 }
 
+.inner .military-hat {
+  position: absolute;
+  top: -130px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 250px;
+  height: 250px;
+  background-image: url(/images/military-hat.png);
+  background-size: 250px auto;
+  z-index: 200;
+  display: none;
+}
+
+.outer:hover .military-hat {
+  display: block;
+}
+
 .bubble-outer {
   position: fixed;
   background-color: var(--color7);
@@ -106,7 +123,7 @@ main .inner span {
   width: 100px;
   height: 100px;
   border-radius: 50%;
-  transition: all 0.3s linear;
+  transition: all 1s linear, border-color 0.3s linear;
   box-sizing: content-box
 }
 

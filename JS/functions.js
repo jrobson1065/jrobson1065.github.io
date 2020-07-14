@@ -5,6 +5,7 @@ function showAllBubbles() {
 }
 
 function openAbout() {
+  pageSwitch = "on";
   aboutBox.style.display = "block";
   aboutBox2.style.display = "block";
 
@@ -12,6 +13,10 @@ function openAbout() {
     aboutBox.style.left = "15%";
     aboutBox2.style.left = "50%";
   }, 10);
+
+  setTimeout(() => {
+    pageSwitch = "off";
+  }, 500);
 }
 
 function closeAbout() {
@@ -37,6 +42,7 @@ function imgRotator() {
 }
 
 function openProjects() {
+  pageSwitch = "on";
   projectImgBox.style.bottom = "50px";
   projectJavaBox.style.top = "50px";
   projectHTMLBox.style.left = "60%";
@@ -45,6 +51,10 @@ function openProjects() {
   for (let i = 0; i < projectImages.length; i++) {
     projectImages[i].style.display = "block";
   }
+
+  setTimeout(() => {
+    pageSwitch = "off";
+  }, 500);
 }
 
 function closeProjects() {
@@ -59,9 +69,14 @@ function closeProjects() {
 }
 
 function openContact() {
+  pageSwitch = "on";
   contactEmailBox.style.left = "20%";
   contactLinkedinBox.style.left = "60%";
   contactGithubBox.style.top = "70%";
+
+  setTimeout(() => {
+    pageSwitch = "off";
+  }, 500);
 }
 
 function closeContact() {
@@ -71,12 +86,18 @@ function closeContact() {
 }
 
 function openResume() {
+  pageSwitch = "on";
   resumeBox.style.display = "block";
-  resumeBox.style.left = (sw - bubbleHeight - 100 - 800) / 2 + bubbleHeight + 100 + "px";
+  resumeBox.style.left =
+    (sw - bubbleHeight - 100 - 800) / 2 + bubbleHeight + 100 + "px";
 
   setTimeout(() => {
     resumeBox.style.height = "95vh";
   }, 10);
+
+  setTimeout(() => {
+    pageSwitch = "off";
+  }, 500);
 }
 
 function closeResume() {
@@ -91,15 +112,19 @@ function stopRays() {
 }
 
 function startRays() {
-  raySwitch = "on";
+  if (pageSwitch === "off") raySwitch = "on";
 }
 
 for (let i = 0; i < bubbles.length; i++) {
-  bubbles[i].addEventListener("mouseover",()=>{
+  bubbles[i].addEventListener("mouseover", () => {
     stopRays();
-  })
+  });
 
-  mainBubble.addEventListener("mouseover",()=>{
+  bubbles[i].addEventListener("mouseout", () => {
     startRays();
-  })
+  });
+
+  mainBubble.addEventListener("mouseover", () => {
+    startRays();
+  });
 }
