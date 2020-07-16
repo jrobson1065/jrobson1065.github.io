@@ -94,6 +94,7 @@
 
 .linkedin-title {
   background-color: var(--color1);
+  min-width: 200px;
 }
 
 .github-title {
