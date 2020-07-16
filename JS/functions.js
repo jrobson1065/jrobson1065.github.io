@@ -107,9 +107,9 @@ function closeContact() {
   contactGithubBox.style.top = "120%";
 
   setTimeout(() => {
-    contactEmailBox.style.display = "block";
-    contactLinkedinBox.style.display = "block";
-    contactGithubBox.style.display = "block";
+    contactEmailBox.style.display = "none";
+    contactLinkedinBox.style.display = "none";
+    contactGithubBox.style.display = "none";
   }, 100);
 
   if (sw < 1000) {
