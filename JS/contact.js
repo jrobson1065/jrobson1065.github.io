@@ -59,6 +59,7 @@ function mobileContactSetup() {
 
 function adjustMobileBubblesContact() {
   contactBubble.style.display = "none";
+  contactBubble.style.top = "-200px";
   homeBubble.style.left = (sw - 4 * bubbleHeight) / 5 + "px";
   aboutBubble.style.left =
     ((sw - 4 * bubbleHeight) / 5) * 2 + bubbleHeight + "px";

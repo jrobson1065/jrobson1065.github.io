@@ -74,6 +74,7 @@ function mobileAboutSetup() {
 
 function adjustMobileBubblesAbout() {
   aboutBubble.style.display = "none";
+  aboutBubble.style.top = "-200px";
   homeBubble.style.left = (sw - 4 * bubbleHeight) / 5 + "px";
   projectsBubble.style.left =
     ((sw - 4 * bubbleHeight) / 5) * 2 + bubbleHeight + "px";
