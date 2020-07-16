@@ -42,7 +42,9 @@ function mobileAboutSetup() {
   closeContact();
   showAllBubbles();
   realignMobileBubbles();
-  adjustMobileBubblesAbout();
+  setTimeout(() => {
+    adjustMobileBubblesAbout();
+  }, 100);
   aboutBox.style.display = "block";
   aboutBox2.style.display = "block";
 

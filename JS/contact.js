@@ -40,7 +40,9 @@ function mobileContactSetup() {
   closeResume();
   showAllBubbles();
   realignMobileBubbles();
-  adjustMobileBubblesContact();
+  setTimeout(() => {
+    adjustMobileBubblesContact();
+  }, 100);
 
   contactEmailBox.style.display = "block";
   contactLinkedinBox.style.display = "block";
