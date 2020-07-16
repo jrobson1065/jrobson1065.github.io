@@ -188,3 +188,7 @@ footer {
   z-index: 500;
   display: none;
 }
+
+img.hide {
+  display: block;
+}
