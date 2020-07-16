@@ -48,6 +48,7 @@ function imgRotator() {
 
 function openProjects() {
   pageSwitch = "on";
+  projectImgBox.style.display = "block";
   projectImgBox.style.bottom = "50px";
   projectJavaBox.style.top = "50px";
   projectHTMLBox.style.left = "60%";
