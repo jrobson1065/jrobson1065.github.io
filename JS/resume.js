@@ -50,8 +50,10 @@ function mobileResumeSetup() {
 }
 
 function adjustMobileBubblesResume() {
-  resumeBubble.style.display = "none";
   resumeBubble.style.top = "-200px";
+  setTimeout(() => {
+    resumeBubble.style.display = "none";
+  }, 500);
   homeBubble.style.left = (sw - 4 * bubbleHeight) / 5 + "px";
   aboutBubble.style.left =
     ((sw - 4 * bubbleHeight) / 5) * 2 + bubbleHeight + "px";

@@ -99,6 +99,7 @@ function mobileHomeClick() {
 
 function mobileHomeSetup() {
   showAllBubbles();
+  realignMobileBubbles();
   closeAbout();
   closeProjects();
   closeResume();

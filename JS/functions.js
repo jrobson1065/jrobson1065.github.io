@@ -5,10 +5,12 @@ function showAllBubbles() {
 }
 
 function realignMobileBubbles() {
-  for (let i = 0; i < bubbles.length; i++) {
-    bubbles[i].style.top = "10px";
-    bubbles[i].style.zIndex = "600";
-  }
+  setTimeout(() => {
+    for (let i = 0; i < bubbles.length; i++) {
+      bubbles[i].style.top = "10px";
+      bubbles[i].style.zIndex = "600";
+    }
+  }, 50);
 }
 
 function openAbout() {

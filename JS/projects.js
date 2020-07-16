@@ -41,7 +41,7 @@ function mobileProjectsSetup() {
   closeContact();
   showAllBubbles();
   realignMobileBubbles();
-  adjustMobileBubblesProjects();
+    adjustMobileBubblesProjects();
 
   for (let i = 0; i < projectImagesMobile.length; i++) {
     projectImagesMobile[i].style.display = "block";
@@ -72,8 +72,10 @@ function mobileProjectsSetup() {
 }
 
 function adjustMobileBubblesProjects() {
-  projectsBubble.style.display = "none";
   projectsBubble.style.top = "-200px";
+  setTimeout(() => {
+    projectsBubble.style.display = "none";
+  }, 500);
   homeBubble.style.left = (sw - 4 * bubbleHeight) / 5 + "px";
   aboutBubble.style.left =
     ((sw - 4 * bubbleHeight) / 5) * 2 + bubbleHeight + "px";
