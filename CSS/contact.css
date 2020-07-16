@@ -57,13 +57,25 @@
   border-color: var(--color4);
 }
 
+.email-text:hover .email-title {
+  border-color: var(--color1);
+}
+
+.linkedin-text:hover .linkedin-title {
+  border-color: var(--color3);
+}
+
+.github-text:hover .github-title {
+  border-color: var(--color4);
+}
+
 .email-title,
 .linkedin-title,
 .github-title {
   position: absolute;
   top: -35px;
   left: 50%;
-  width: 200px;
+  width: auto;
   transform: translateX(-50%);
   text-align: center;
   z-index: 1;
@@ -71,7 +83,7 @@
   padding: 10px;
   border-radius: 15px;
   font-family: var(--font2);
-  transition: all 0.5s ease;
+  transition: all 1s ease;
   border: 5px solid var(--color7);
   cursor: default;
 }
@@ -110,8 +122,16 @@
     font-family: var(--font1);
     font-size: 15pt;
     color: var(--color6);
+    text-decoration: none;
 }
 
 .contact-link:hover {
-  font-weight: bolder;
+  text-decoration: underline;
+}
+
+.contact {
+  height: auto;
+  width: 100%;
+  position: absolute;
+  top: 160px;
 }

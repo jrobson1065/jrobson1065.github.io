@@ -130,9 +130,22 @@
   border-radius: 15px;
   display: none;
   transform: rotateY(90deg);
-  margin-left: 190px;
   transform-style: preserve-3d;
   transition: all 1s ease;
+  pointer-events: none;
+}
+
+.screenshot-mobile {
+  position: absolute;
+  height: 380px;
+  width: 380px;
+  top: 5px;
+  left: 5px;
+  border-radius: 15px;
+  opacity: 0;
+  transition: all 1s ease;
+  pointer-events: none;
+  z-index: 200;
 }
 
 .project:hover img {
@@ -165,4 +178,20 @@
 
 main ul li {
   height: 30px;
+}
+
+.projects-disclaimer {
+  font-family: var(--font1);
+  font-size: 15pt;
+  display: none;
+  width: 80%;
+  margin-left: 10%;
+  background-color: var(--color2);
+}
+
+.about {
+  height: auto;
+  width: 100%;
+  position: absolute;
+  top: 160px;
 }

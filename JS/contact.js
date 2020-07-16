@@ -29,3 +29,36 @@ function fullscreenContactClick() {
   }, 200);
   });
 }
+
+function mobileContactClick() {
+  contactBubble.addEventListener("click", mobileContactSetup);
+  contactBubble.addEventListener("touchstart", mobileContactSetup);
+}
+
+function mobileContactSetup() {
+  closeAbout();
+  closeProjects();
+  closeResume();
+  showAllBubbles();
+  adjustMobileBubblesContact();
+
+  contactEmailBox.style.position = "relative";
+  contactEmailBox.style.left = "5px";
+  contactLinkedinBox.style.left = "5px";
+  contactLinkedinBox.style.position = "relative";
+  contactLinkedinBox.style.margin = "50px 0";
+  contactGithubBox.style.left = "5px";
+  contactGithubBox.style.position = "relative";
+  contactGithubBox.style.marginBottom = "80px";
+}
+
+function adjustMobileBubblesContact() {
+  contactBubble.style.display = "none";
+  homeBubble.style.left = (sw - 4 * bubbleHeight) / 5 + "px";
+  aboutBubble.style.left =
+    ((sw - 4 * bubbleHeight) / 5) * 2 + bubbleHeight + "px";
+  projectsBubble.style.left =
+    ((sw - 4 * bubbleHeight) / 5) * 3 + 2 * bubbleHeight + "px";
+  resumeBubble.style.left =
+    ((sw - 4 * bubbleHeight) / 5) * 4 + 3 * bubbleHeight + "px";
+}

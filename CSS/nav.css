@@ -39,6 +39,15 @@ body {
   text-shadow: -7px 0 var(--color5), -4px 0 var(--color5);
 }
 
+.my-name-mobile {
+  display: none;
+  width: 100%;
+  left: 0;
+  text-align: center;
+  font-size: 25pt;
+  text-shadow: -4px 0 var(--color5), -2px 0 var(--color5);
+}
+
 main {
   position: relative;
   height: 100%;
@@ -103,8 +112,6 @@ main .inner span {
   position: fixed;
   background-color: var(--color7);
   border: 5px solid var(--color7);
-  width: 100px;
-  height: 100px;
   border-radius: 50%;
   transition: all 1s linear, border-color 0.3s linear;
   box-sizing: content-box
@@ -114,8 +121,6 @@ main .inner span {
   background-color: var(--color7);
   border: 5px solid var(--color4);
   border-radius: 50%;
-  width: 100px;
-  height: 100px;
   left: 50%;
   top: 50%;
   transform: translateX(-50%) translateY(-50%);
@@ -171,26 +176,15 @@ footer {
   padding: 15px;
   font-family: var(--font1);
   font-size: 15pt;
+  z-index: 2000;
 }
 
-.disabled {
-  position: fixed;
-  z-index: 200000;
+.blue-mobile-header {
   background-color: var(--color2);
-  font-size: 30pt;
-  font-weight: bolder;
-  font-family: var(--font2);
-  height: 100%;
   width: 100%;
-  text-align: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 500;
   display: none;
-  cursor: default;
-}
-
-.disabled span {
-  position: absolute;
-  left: 50%;
-  top: 50%;
-  width: 80%;
-  transform: translateX(-50%) translateY(-50%);
 }

@@ -2,15 +2,36 @@ if (sw >= 1000) {
   fullscreenLoadup();
   fullscreenHomeClick();
   fullscreenAboutClick();
-  fullscreenContactClick();
-  fullscreenResumeClick();
   fullscreenProjectsClick();
+  fullscreenResumeClick();
+  fullscreenContactClick();
 }
 
 if (sw < 1000) {
-    document.querySelector(".disabled").style.display = "block";
-}
 
-if (sw > 800 && sw < 1300) {
+  for (let i = 0; i < rayDivs.length; i++) {
+    rayDivs[i].parentNode.removeChild(rayDivs[i]);
+  }
 
+  for (let i = 0; i < bubbles.length; i++) {
+    bubbles[i].style.top = "10px";
+    bubbles[i].style.zIndex = "600";
+  }
+
+  blueMobileHeader.style.display = "block";
+  blueMobileHeader.style.height = bubbleHeight + 20 + "px";
+  mainBubble.style.zIndex = -1;
+  myNameMobile.style.zIndex = -1;
+
+  closeAbout();
+  closeProjects();
+  closeResume();
+  closeContact();
+
+  mobileBubbles();
+  mobileHomeClick();
+  mobileAboutClick();
+  mobileProjectsClick();
+  mobileResumeClick();
+  mobileContactClick();
 }

@@ -8,3 +8,7 @@ iframe {
     display: none;
     transition: all 1s ease;
 }
+
+.resume {
+    height: 100%;
+}

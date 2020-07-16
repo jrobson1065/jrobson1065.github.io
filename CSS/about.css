@@ -29,12 +29,14 @@
   width: 250px;
   background-color: var(--color4);
   z-index: 5;
+  left: -500px;
 }
 
 .about-text2 {
   width: 250px;
   background-color: var(--color1);
   z-index: 4;
+  left: 120%;
 }
 
 .about-text:hover {
@@ -109,4 +111,11 @@
 
 .about-text2 .about-title2:hover {
   border-color: var(--color3);
+}
+
+.about {
+  height: auto;
+  width: 100%;
+  position: absolute;
+  top: 160px;
 }

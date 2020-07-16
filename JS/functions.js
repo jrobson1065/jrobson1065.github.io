@@ -23,14 +23,19 @@ function closeAbout() {
   aboutBox.style.left = "-500px";
   aboutBox2.style.left = "120%";
 
+  if (sw < 1000) {
+    aboutBox.style.left = "120%";
+    aboutBox2.style.left = "120%";
+  }
+
   setTimeout(() => {
     aboutBox.style.display = "none";
     aboutBox2.style.display = "none";
   }, 2000);
 }
 
-let c = 0;
 function imgRotator() {
+  let c = 0;
   setInterval(() => {
     if (c === 0) aboutImg.style.backgroundImage = "url(/images/self.jpg)";
     if (c === 1) aboutImg.style.backgroundImage = "url(/images/self2.jpg)";
@@ -62,10 +67,19 @@ function closeProjects() {
   projectJavaBox.style.top = "-400px";
   projectHTMLBox.style.left = "120%";
   projectJSBox.style.left = "-450px";
+  projectsDisclaimer.style.display = "none";
 
   for (let i = 0; i < projectImages.length; i++) {
     projectImages[i].style.display = "none";
   }
+
+  for (let i = 0; i < projectImagesMobile.length; i++) {
+    projectImagesMobile[i].style.display = "none";
+  }
+
+  setTimeout(() => {
+    projectImgBox.style.display = "none";
+  }, 800);
 }
 
 function openContact() {
@@ -83,6 +97,12 @@ function closeContact() {
   contactEmailBox.style.left = "-500px";
   contactLinkedinBox.style.left = "120%";
   contactGithubBox.style.top = "120%";
+
+  if (sw < 1000) {
+    contactEmailBox.style.left = "120%";
+    contactLinkedinBox.style.left = "120%";
+    contactGithubBox.style.left = "120%";
+  }
 }
 
 function openResume() {

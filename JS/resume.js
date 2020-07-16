@@ -28,3 +28,33 @@ function fullscreenResumeClick() {
     }, 200);
   });
 }
+
+function mobileResumeClick() {
+  resumeBubble.addEventListener("click", mobileResumeSetup);
+  resumeBubble.addEventListener("touchstart", mobileResumeSetup);
+}
+
+function mobileResumeSetup() {
+  closeAbout();
+  closeProjects();
+  closeContact();
+  showAllBubbles();
+  adjustMobileBubblesResume();
+
+  resumeBox.style.display = "block";
+  resumeBox.style.height = "60%";
+  resumeBox.style.width = "100%";
+  resumeBox.style.left = "0";
+  resumeBox.style.top = "150px";
+}
+
+function adjustMobileBubblesResume() {
+  resumeBubble.style.display = "none";
+  homeBubble.style.left = (sw - 4 * bubbleHeight) / 5 + "px";
+  aboutBubble.style.left =
+    ((sw - 4 * bubbleHeight) / 5) * 2 + bubbleHeight + "px";
+  projectsBubble.style.left =
+    ((sw - 4 * bubbleHeight) / 5) * 3 + 2 * bubbleHeight + "px";
+  contactBubble.style.left =
+    ((sw - 4 * bubbleHeight) / 5) * 4 + 3 * bubbleHeight + "px";
+}

@@ -35,7 +35,7 @@ function bubblesPopUp() {
 
   setTimeout(() => {
     bubbles[0].style.bottom = "20px";
-  }, 1400);
+  }, 2000);
 
   setTimeout(() => {
     bubbles[1].style.bottom = "70px";
@@ -43,7 +43,7 @@ function bubblesPopUp() {
 
   setTimeout(() => {
     bubbles[1].style.bottom = "20px";
-  }, 1700);
+  }, 2300);
 
   setTimeout(() => {
     bubbles[2].style.bottom = "60px";
@@ -51,7 +51,7 @@ function bubblesPopUp() {
 
   setTimeout(() => {
     bubbles[2].style.bottom = "20px";
-  }, 2000);
+  }, 2600);
 
   setTimeout(() => {
     bubbles[3].style.bottom = "50px";
@@ -59,11 +59,49 @@ function bubblesPopUp() {
 
   setTimeout(() => {
     bubbles[3].style.bottom = "20px";
-  }, 2300);
+  }, 2900);
 }
 
 function fullscreenHomeClick() {
   homeBubble.addEventListener("click", () => {
     fullscreenLoadup();
   });
+}
+
+function mobileBubbles() {
+  homeBubble.style.display = "none";
+  aboutBubble.style.left = (sw - (4 * bubbleHeight)) / 5 + "px";
+  projectsBubble.style.left = ((sw - (4 * bubbleHeight)) / 5) * 2 + bubbleHeight + "px";
+  resumeBubble.style.left = ((sw - (4 * bubbleHeight)) / 5) * 3 + (2 * bubbleHeight) + "px";
+  contactBubble.style.left = ((sw - (4 * bubbleHeight)) / 5) * 4 + (3 * bubbleHeight) + "px";
+  mainBubble.style.top = bubbleHeight + 20 + "px";
+  mainBubble.style.transform = "translateY(0) translateX(-50%)";
+  mainBubble.style.height = "200px";
+  mainBubble.style.width = "200px";
+  mainBubbleInner.style.height = "200px";
+  mainBubbleInner.style.width = "200px";
+  mainBubbleInner.style.fontSize = "25pt";
+  mainBubble.style.borderWidth = "5px";
+  mainBubbleInner.style.borderWidth = "5px";
+  myName.style.display = "none";
+  myNameMobile.style.display = "block";
+  myNameMobile.style.top = bubbleHeight + 40 + "px";
+  footer.style.backgroundColor = "#fff07ccc";
+  footer.style.width = "100%";
+  footer.style.textAlign = "center";
+  footer.style.zIndex = "200";
+}
+
+function mobileHomeClick() {
+  homeBubble.addEventListener("click", mobileHomeSetup);
+  homeBubble.addEventListener("touchstart", mobileHomeSetup);
+}
+
+function mobileHomeSetup() {
+  showAllBubbles();
+  closeAbout();
+  closeProjects();
+  closeResume();
+  closeContact();
+  mobileBubbles();
 }
