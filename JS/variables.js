@@ -76,7 +76,7 @@ for (let i = 0; i < projectImages.length; i++) {
   projectImages[i].style.left = 0.6 * sw + 10 + "px";
 }
 
-if (sw > 600) {
+if (sw > 800) {
   window.addEventListener("resize", () => {
     location.reload();
   });
