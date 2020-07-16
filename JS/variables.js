@@ -21,6 +21,7 @@ const contactLinkedinBox = document.querySelector(".linkedin-text");
 const contactGithubBox = document.querySelector(".github-text");
 const resumeBox = document.querySelector("iframe");
 const resumeArticle = document.querySelector(".resume");
+const downloadPDFDiv = document.querySelector(".download-pdf");
 const myName = document.querySelector(".my-name");
 const myNameMobile = document.querySelector(".my-name-mobile");
 const rayDivs = document.querySelectorAll(".ray");

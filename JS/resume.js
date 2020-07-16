@@ -48,11 +48,13 @@ function mobileResumeSetup() {
     adjustMobileBubblesResume();
   }, 100);
 
-  resumeBox.style.display = "block";
-  resumeBox.style.height = "60%";
-  resumeBox.style.width = "100%";
-  resumeBox.style.left = "0";
-  resumeBox.style.top = "150px";
+  downloadPDFDiv.style.display = "block";
+  downloadPDFDiv.style.left = "0";
+  downloadPDFDiv.style.marginLeft = "0";
+  downloadPDFDiv.style.top = "200px";
+  downloadPDFDiv.style.height = "50px";
+  downloadPDFDiv.style.lineHeight = "50px";
+
 }
 
 function adjustMobileBubblesResume() {

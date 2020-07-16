@@ -1,3 +1,18 @@
+@import url("https://fonts.googleapis.com/css2?family=Julius+Sans+One&display=swap");
+
+:root {
+  --color1: #ffc6d9;
+  --color2: #51d6ff;
+  --color3: #fff07c;
+  --color4: #80ff72;
+  --color5: #545454;
+  --color6: #191919;
+  --color7: #f0f8ff;
+  --font1: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  --font2: "Julius Sans One", "Lucida Sans", "Lucida Sans Regular",
+    "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
 iframe {
     width: 800px;
     height: 0;
@@ -11,4 +26,15 @@ iframe {
 
 .resume {
     height: 100%;
+}
+
+.download-pdf {
+    width: 100%;
+    position: absolute;
+    margin-left: 15%;
+    text-align: center;
+    font-size: 15pt;
+    font-family: var(--font1);
+    display: none;
+    background-color: var(--color2);
 }

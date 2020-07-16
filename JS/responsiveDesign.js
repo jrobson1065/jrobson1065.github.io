@@ -8,7 +8,6 @@ if (sw >= 1000) {
 }
 
 if (sw < 1000) {
-
   for (let i = 0; i < rayDivs.length; i++) {
     rayDivs[i].parentNode.removeChild(rayDivs[i]);
   }
@@ -22,6 +21,7 @@ if (sw < 1000) {
   blueMobileHeader.style.height = bubbleHeight + 20 + "px";
   mainBubble.style.zIndex = -1;
   myNameMobile.style.zIndex = -1;
+  aboutBox.style.display = "none";
 
   closeAbout();
   closeProjects();

@@ -92,6 +92,30 @@ function closeProjects() {
   }, 800);
 }
 
+function openResume() {
+  pageSwitch = "on";
+  downloadPDFDiv.style.display = "block";
+  resumeBox.style.display = "block";
+  resumeBox.style.left =
+    (sw - bubbleHeight - 100 - 800) / 2 + bubbleHeight + 100 + "px";
+
+  setTimeout(() => {
+    resumeBox.style.height = "95vh";
+  }, 10);
+
+  setTimeout(() => {
+    pageSwitch = "off";
+  }, 500);
+}
+
+function closeResume() {
+  downloadPDFDiv.style.display = "none";
+  resumeBox.style.height = "0";
+  setTimeout(() => {
+    resumeBox.style.display = "none";
+  }, 1000);
+}
+
 function openContact() {
   pageSwitch = "on";
 
@@ -126,28 +150,6 @@ function closeContact() {
     contactLinkedinBox.style.left = "120%";
     contactGithubBox.style.left = "120%";
   }
-}
-
-function openResume() {
-  pageSwitch = "on";
-  resumeBox.style.display = "block";
-  resumeBox.style.left =
-    (sw - bubbleHeight - 100 - 800) / 2 + bubbleHeight + 100 + "px";
-
-  setTimeout(() => {
-    resumeBox.style.height = "95vh";
-  }, 10);
-
-  setTimeout(() => {
-    pageSwitch = "off";
-  }, 500);
-}
-
-function closeResume() {
-  resumeBox.style.height = "0";
-  setTimeout(() => {
-    resumeBox.style.display = "none";
-  }, 1000);
 }
 
 function stopRays() {
