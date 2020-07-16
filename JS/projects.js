@@ -40,6 +40,7 @@ function mobileProjectsSetup() {
   closeResume();
   closeContact();
   showAllBubbles();
+  realignMobileBubbles();
   adjustMobileBubblesProjects();
 
   for (let i = 0; i < projectImagesMobile.length; i++) {

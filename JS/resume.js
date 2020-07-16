@@ -39,6 +39,7 @@ function mobileResumeSetup() {
   closeProjects();
   closeContact();
   showAllBubbles();
+  realignMobileBubbles();
   adjustMobileBubblesResume();
 
   resumeBox.style.display = "block";

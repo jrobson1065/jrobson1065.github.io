@@ -41,6 +41,7 @@ function mobileAboutSetup() {
   closeResume();
   closeContact();
   showAllBubbles();
+  realignMobileBubbles();
   adjustMobileBubblesAbout();
   aboutBox.style.display = "block";
   aboutBox2.style.display = "block";

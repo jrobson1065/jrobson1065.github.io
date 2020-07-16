@@ -4,6 +4,13 @@ function showAllBubbles() {
   }
 }
 
+function realignMobileBubbles() {
+  for (let i = 0; i < bubbles.length; i++) {
+    bubbles[i].style.top = "10px";
+    bubbles[i].style.zIndex = "600";
+  }
+}
+
 function openAbout() {
   pageSwitch = "on";
   aboutBox.style.display = "block";

@@ -39,6 +39,7 @@ function mobileContactSetup() {
   closeProjects();
   closeResume();
   showAllBubbles();
+  realignMobileBubbles();
   adjustMobileBubblesContact();
 
   contactEmailBox.style.display = "block";
