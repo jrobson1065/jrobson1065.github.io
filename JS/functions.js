@@ -85,9 +85,16 @@ function closeProjects() {
 
 function openContact() {
   pageSwitch = "on";
-  contactEmailBox.style.left = "20%";
-  contactLinkedinBox.style.left = "60%";
-  contactGithubBox.style.top = "70%";
+
+  contactEmailBox.style.display = "block";
+  contactLinkedinBox.style.display = "block";
+  contactGithubBox.style.display = "block";
+
+  setTimeout(() => {
+    contactEmailBox.style.left = "20%";
+    contactLinkedinBox.style.left = "60%";
+    contactGithubBox.style.top = "70%";
+  }, 100);
 
   setTimeout(() => {
     pageSwitch = "off";
@@ -98,6 +105,12 @@ function closeContact() {
   contactEmailBox.style.left = "-500px";
   contactLinkedinBox.style.left = "120%";
   contactGithubBox.style.top = "120%";
+
+  setTimeout(() => {
+    contactEmailBox.style.display = "block";
+    contactLinkedinBox.style.display = "block";
+    contactGithubBox.style.display = "block";
+  }, 100);
 
   if (sw < 1000) {
     contactEmailBox.style.left = "120%";

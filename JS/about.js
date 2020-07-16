@@ -32,6 +32,7 @@ function fullscreenAboutClick() {
 }
 
 function mobileAboutClick() {
+  aboutBubble.addEventListener("click", mobileAboutSetup);
   aboutBubble.addEventListener("touchstart", mobileAboutSetup);
 }
 
