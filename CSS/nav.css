@@ -36,7 +36,7 @@ body {
   font-weight: bolder;
   color: var(--color3);
   cursor: pointer;
-  text-shadow: -7px 0 var(--color5), -4px 0 var(--color5);
+  text-shadow: -5px 0 var(--color5), -3px 0 var(--color5);
 }
 
 .my-name-mobile {
