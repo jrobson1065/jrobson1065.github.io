@@ -35,7 +35,7 @@ body {
   font-family: var(--font2);
   font-weight: bolder;
   color: var(--color3);
-  pointer-events: none;
+  cursor: pointer;
   text-shadow: -7px 0 var(--color5), -4px 0 var(--color5);
 }
 
@@ -190,5 +190,17 @@ footer {
 }
 
 img.hide {
+  display: none;
+}
+
+.golden-girls-quote {
+  position: fixed;
+  width: 100%;
+  font-size: 50pt;
+  font-family: var(--font1);
+  top: 50%;
+  text-align: center;
+  transform: translateY(60%);
+  pointer-events: none;
   display: none;
 }

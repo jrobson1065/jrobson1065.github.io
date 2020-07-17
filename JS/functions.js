@@ -4,6 +4,13 @@ function showAllBubbles() {
   }
 }
 
+function checkGoldenGirls() {
+  if (goldenGirlsSwitch === "on") {
+    goldenGirlsSwitch = "off";
+    removeGoldenGirls();
+  }
+}
+
 function realignMobileBubbles() {
   setTimeout(() => {
     for (let i = 0; i < bubbles.length; i++) {
@@ -14,6 +21,7 @@ function realignMobileBubbles() {
 }
 
 function openAbout() {
+  checkGoldenGirls();
   pageSwitch = "on";
   aboutBox.style.display = "block";
   aboutBox2.style.display = "block";
@@ -56,6 +64,7 @@ function imgRotator() {
 }
 
 function openProjects() {
+  checkGoldenGirls();
   pageSwitch = "on";
   projectImgBox.style.display = "block";
   projectImgBox.style.bottom = "50px";
@@ -93,6 +102,7 @@ function closeProjects() {
 }
 
 function openResume() {
+  checkGoldenGirls();
   pageSwitch = "on";
   downloadPDFDiv.style.display = "block";
   resumeBox.style.display = "block";
@@ -117,6 +127,7 @@ function closeResume() {
 }
 
 function openContact() {
+  checkGoldenGirls();
   pageSwitch = "on";
 
   contactEmailBox.style.display = "block";
@@ -172,4 +183,83 @@ for (let i = 0; i < bubbles.length; i++) {
   mainBubble.addEventListener("mouseover", () => {
     startRays();
   });
+}
+
+myName.addEventListener("click", () => {
+  if (goldenGirlsSwitch === "on") {
+    goldenGirlsSwitch = "off";
+  } else {
+    goldenGirlsSwitch = "on";
+  }
+
+  if (goldenGirlsSwitch === "off") {
+    removeGoldenGirls();
+  } else {
+    showGoldenGirls();
+  }
+});
+
+function showGoldenGirls() {
+  fullscreenLoadup();
+
+  setTimeout(() => {
+    goldenGirlsQuote.style.display = "block";
+    mainBubbleSpan.innerText = "The Golden Girls.";
+    aboutBubbleSpan.innerText = "Blanche.";
+    aboutBubbleSpan.style.top = "80%";
+    aboutBubbleSpan.style.fontWeight = "bolder";
+    aboutBubbleSpan.style.textShadow =
+      "2px 2px 5px aliceblue, -2px -2px 5px aliceblue, 2px 2px 5px aliceblue, -2px -2px 5px aliceblue";
+    aboutBubbleInner.style.backgroundImage = "url(/images/blanche.jpg)";
+    aboutBubbleInner.style.backgroundSize = "cover";
+    projectsBubbleSpan.innerText = "Dorothy.";
+    projectsBubbleSpan.style.top = "80%";
+    projectsBubbleSpan.style.fontWeight = "bolder";
+    projectsBubbleSpan.style.textShadow =
+      "2px 2px 5px aliceblue, -2px -2px 5px aliceblue, 2px 2px 5px aliceblue, -2px -2px 5px aliceblue";
+    projectsBubbleInner.style.backgroundImage = "url(/images/dorothy.jpg)";
+    projectsBubbleInner.style.backgroundSize = "cover";
+    projectsBubbleInner.style.backgroundPositionX = "-20px";
+    resumeBubbleSpan.innerText = "Rose.";
+    resumeBubbleSpan.style.top = "80%";
+    resumeBubbleSpan.style.fontWeight = "bolder";
+    resumeBubbleSpan.style.textShadow =
+      "2px 2px 5px aliceblue, -2px -2px 5px aliceblue, 2px 2px 5px aliceblue, -2px -2px 5px aliceblue";
+    resumeBubbleInner.style.backgroundImage = "url(/images/rose.jpg)";
+    resumeBubbleInner.style.backgroundSize = "cover";
+    resumeBubbleInner.style.backgroundPositionX = "-20px";
+    contactBubbleSpan.innerText = "Sophia.";
+    contactBubbleSpan.style.top = "80%";
+    contactBubbleSpan.style.fontWeight = "bolder";
+    contactBubbleSpan.style.textShadow =
+      "2px 2px 5px aliceblue, -2px -2px 5px aliceblue, 2px 2px 5px aliceblue, -2px -2px 5px aliceblue";
+    contactBubbleInner.style.backgroundImage = "url(/images/sophia.jpg)";
+    contactBubbleInner.style.backgroundSize = "cover";
+    contactBubbleInner.style.backgroundPositionX = "-50px";
+  }, 1000);
+}
+
+function removeGoldenGirls() {
+  goldenGirlsQuote.style.display = "none";
+  mainBubbleSpan.innerText = "Coding with a smile.";
+  aboutBubbleSpan.innerText = "About.";
+  aboutBubbleSpan.style.top = "";
+  aboutBubbleSpan.style.fontWeight = "";
+  aboutBubbleSpan.style.textShadow = "";
+  aboutBubbleInner.style.backgroundImage = "";
+  projectsBubbleSpan.innerText = "Projects.";
+  projectsBubbleSpan.style.top = "";
+  projectsBubbleSpan.style.fontWeight = "";
+  projectsBubbleSpan.style.textShadow = "";
+  projectsBubbleInner.style.backgroundImage = "";
+  resumeBubbleSpan.innerText = "Resume.";
+  resumeBubbleSpan.style.top = "";
+  resumeBubbleSpan.style.fontWeight = "";
+  resumeBubbleSpan.style.textShadow = "";
+  resumeBubbleInner.style.backgroundImage = "";
+  contactBubbleSpan.innerText = "Contact.";
+  contactBubbleSpan.style.top = "";
+  contactBubbleSpan.style.fontWeight = "";
+  contactBubbleSpan.style.textShadow = "";
+  contactBubbleInner.style.backgroundImage = "";
 }
