@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/CSS/fizzbuzz.css" />
+    <title>FizzBuzz</title>
+  </head>
+  <body>
+    <h1>Welcome to FizzBuzz!</h1>
+    <p>
+      In this version, you can choose both words (4 letters each) and a number
+      for each word. Enter a number and the app will return the words if they
+      apply to that number or it will return the number in the form of a word if
+      no words apply.
+    </p>
+    <div class="form-div">
+      <input
+        class="fizz"
+        type="text"
+        id="fizz"
+        minlength="4"
+        maxlength="4"
+        placeholder="Fizz"
+        autocomplete="off"
+      />
+      <label for="fizz" class="fizz-label">1st Word:</label>
+      <input
+        class="fizz-number"
+        type="number"
+        id="fizz-number"
+        placeholder="3"
+        max="9"
+        min="3"
+      />
+      <label for="fizz-number" class="fizz-number-label">Number:</label>
+      <input
+        class="buzz"
+        type="text"
+        id="buzz"
+        minlength="4"
+        maxlength="4"
+        placeholder="Buzz"
+        autocomplete="off"
+      />
+      <label for="buzz" class="buzz-label">2nd Word:</label>
+      <input
+        class="buzz-number"
+        type="number"
+        id="buzz-number"
+        placeholder="5"
+        max="9"
+        min="3"
+      />
+      <label for="buzz-number" class="buzz-number-label">Number:</label>
+    </div>
+
+    <div class="user-input-container">
+      Enter A Number:
+      <input class="user-input" type="number" min="1" max="9" maxlength="2" />
+    </div>
+
+    <div class="output-container">
+      <span class="output">FOUR</span>
+    </div>
+
+    <script src="JS/fizzbuzz.js"></script>
+  </body>
+</html>

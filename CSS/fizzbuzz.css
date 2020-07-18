@@ -1,0 +1,149 @@
+@import url("https://fonts.googleapis.com/css2?family=Special+Elite&display=swap");
+
+:root {
+  --color1: #1d1128;
+  --color2: #757761;
+  --color3: #5941a9;
+  --color4: #dde8b9;
+  --color5: #e5d4ed;
+  --color5a: #e5d4ed22;
+  --font1: "Special Elite", cursive;
+  --font2: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  color: var(--color1);
+}
+
+body {
+  background-color: var(--color3);
+}
+
+h1 {
+  font-family: var(--font1);
+  text-align: center;
+  margin-top: 50px;
+  font-size: 50pt;
+}
+
+p {
+  font-family: var(--font2);
+  font-size: 15pt;
+  width: 80%;
+  margin-left: 10%;
+}
+
+.form-div {
+  width: 650px;
+  margin: 50px auto;
+  height: 50px;
+  position: relative;
+}
+
+.form-div input {
+  width: 100px;
+  font-size: 25pt;
+  border: none;
+  border-bottom: 1px solid var(--color5);
+  margin-bottom: 30px;
+  background-color: transparent;
+  text-align: center;
+  position: absolute;
+  outline: none;
+  color: var(--color4);
+}
+
+.form-div input:hover {
+  background-color: var(--color5a);
+}
+
+.form-div ::placeholder {
+    color: var(--color2);
+}
+
+.form-div input:focus {
+    border-bottom: 3px solid var(--color4);
+}
+
+.form-div label {
+  position: absolute;
+  font-size: 15pt;
+  font-family: var(--font2);
+}
+
+.fizz {
+  left: 0;
+}
+
+.fizz-label {
+  left: 0;
+  top: -25px;
+}
+
+.fizz-number {
+  left: 150px;
+}
+
+.fizz-number-label {
+  left: 150px;
+  top: -25px;
+}
+
+.buzz {
+  left: 400px;
+}
+
+.buzz-label {
+  left: 400px;
+  top: -25px;
+}
+
+.buzz-number {
+  left: 550px;
+}
+
+.buzz-number-label {
+  left: 550px;
+  top: -25px;
+}
+
+input[type=number]::-webkit-inner-spin-button, 
+input[type=number]::-webkit-outer-spin-button { 
+  -webkit-appearance: none; 
+  margin: 0; 
+}
+
+.user-input-container {
+    width: 250px;
+    margin: 0 auto;
+    font-size: 23pt;
+    font-family: var(--font2);
+    text-align: center;
+}
+
+.user-input {
+    width: 250px;
+    font-size: 100pt;
+    text-align: center;
+    font-family: var(--font2);
+    background-color: transparent;
+    outline: none;
+    border: none;
+    border-bottom: 3px solid var(--color4);
+}
+
+.output-container {
+    margin: 50px auto;
+    text-align: center;
+    width: 80%;
+}
+
+.output {
+    color: var(--color4);
+    font-size: 50pt;
+    font-family: var(--font2);
+}
