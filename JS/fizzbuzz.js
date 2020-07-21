@@ -17,13 +17,13 @@ fizzNumberInput.addEventListener("change", function () {
   if (this.value == "0") {
     this.value = "";
   }
-})
+});
 
 buzzNumberInput.addEventListener("change", function () {
   if (this.value == "0") {
     this.value = "";
   }
-})
+});
 
 fizzInput.addEventListener("change", function () {
   this.value =
@@ -57,14 +57,14 @@ userInput.addEventListener("change", () => {
 });
 
 function convertNumber(entry, fizz, fizzNumber, buzz, buzzNumber) {
-  if (entry % fizzNumber === 0 && entry % buzzNumber === 0) {
+  if (parseInt(entry) === 0) {
+    return "Zero";
+  } else if (entry % fizzNumber === 0 && entry % buzzNumber === 0) {
     return fizz + buzz;
   } else if (entry % fizzNumber === 0) {
     return fizz;
   } else if (entry % buzzNumber === 0) {
     return buzz;
-  } else if (parseInt(entry) === 0) {
-    return "Zero";
   } else {
     return getNumberAsWord(entry);
   }
