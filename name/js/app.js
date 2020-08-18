@@ -8,7 +8,20 @@ const previousButton = document.querySelector(".previous-button");
 
 document.addEventListener("DOMContentLoaded", () => {
   const fh = new FileHelper();
-  const names = fh.pullTextFromFile("../roster.txt").split("\n");
+  // const names = fh.pullTextFromFile("../roster.txt").split("\n");
+  const names = [
+    "Ben",
+    "James",
+    "Jessica",
+    "Sally",
+    "Jordan",
+    "Mike",
+    "Steve",
+    "Skylar",
+    "Lauren",
+    "Tyler",
+    "Jeff",
+  ];
 
   shuffle(names);
   addNamesToDocument(names);
