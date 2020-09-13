@@ -1,0 +1,46 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    padding: 50px;
+}
+
+.form {
+    margin-bottom: 25px;
+}
+
+.indent0 {
+    position: absolute;
+}
+
+.indent1 {
+    position: absolute;
+    margin-left: 100px;
+}
+
+.indent2 {
+    position: absolute;
+    margin-left: 200px;
+}
+
+.indent3 {
+    position: absolute;
+    margin-left: 300px;
+}
+
+.indent4 {
+    position: absolute;
+    margin-left: 400px;
+}
+
+.indent5 {
+    position: absolute;
+    margin-left: 500px;
+}
+
+.indent6 {
+    margin-left: 600px;
+}
